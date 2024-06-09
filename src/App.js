@@ -8,19 +8,19 @@ import Navbar from './Components/Navbar';
 import Projects from './Pages/Projects';
 import Home from './Pages/Home';
 import ErrorPage from './Components/404 Page';
+import About from './Pages/About';
 
 function App() {
   return (
     <>
       <Navbar />
       <div className="mt-16 min-h-fit flex flex-col">
-        <div className="flex-grow">
-          <Routes>
-            <Route exact path='/' element={<Home/>}></Route>
-            <Route path='/projects' element={<Projects/>}></Route>
-            <Route exact path='*' element={<ErrorPage/>}></Route>
-          </Routes>
-        </div>
+        <Routes>
+          <Route exact path='/' element={<Home/>}></Route>
+          <Route exact path='/about' element={<About/>}></Route>
+          <Route path='/projects' element={<Projects/>}></Route>
+          <Route exact path='*' element={<ErrorPage/>}></Route>
+        </Routes>
       </div>
       <Footer />
     </>

@@ -13,14 +13,14 @@ const Footer = () => {
         <footer className="flex flex-col items-center bg-white border-t-2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full max-w-4xl mx-auto p-3">
                 <div className="flex flex-col mx-2 md:mx-4 space-y-2">
-                    <h1 className="text-lg">Quick links</h1>
+                    <h2 className="text-lg">Quick links</h2>
                     <Link to={"/"}>Home</Link>
                     <Link to={"/about"}>About</Link>
                     <Link to={"/projects"}>Projects</Link>
                     <Link to={"/contacts"}>Contacts</Link>
                 </div>
                 <div className="flex flex-col mx-2 md:mx-4 space-y-2">
-                    <h1 className="text-lg">Find me on social media</h1>
+                    <h2 className="text-lg">Find me on social media</h2>
                     <div className="flex flex-wrap mt-2 space-x-3 md:space-x-4">
                         <Link className="icon" to={"https://www.github.com/ndungu-muigai"} target="_blank" title="GitHub"><FaGithub /></Link>
                         <Link className="icon" to={"https://www.linkedin.com/in/samuel-muigai-560355224/"} target="_blank" title="LinkedIn"><FaLinkedinIn /></Link>
