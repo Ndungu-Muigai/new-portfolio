@@ -1,4 +1,6 @@
 import { ReactTyped } from "react-typed";
+import { Link } from "react-router-dom";
+
 import Logo from '../assets/Images/Logo.png';
 
 const Home = () => {
@@ -21,6 +23,10 @@ const Home = () => {
                         className="font-bold"
                     />
                 </p>
+                <div className="flex flex-row justify-center space-x-10">
+                    <Link to="/about" className="bg-blue-700 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">About Me</Link>
+                    <Link to="/contacts" className="bg-blue-700 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Contact Me</Link>
+                </div>
             </div>
             <div className="w-1/2 mr-8">
                 <img src={Logo} alt="Samuel Ndung'u Muigai" className="w-full rounded-lg shadow-xl"/>
