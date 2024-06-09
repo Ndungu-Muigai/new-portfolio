@@ -14,3 +14,7 @@ h1
 {
   @apply font-bold uppercase text-lg md:text-4xl text-center
 }
+.fa-icons
+{
+  @apply text-4xl text-center md:text-5xl
+}
