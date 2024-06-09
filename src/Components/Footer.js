@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <div className="text-center w-full max-w-4xl mx-auto mb-2">
                 <hr className="my-2" />
-                <p className="text-sm">&copy; {year} Ndung'u Muigai - All rights reserved</p>
+                <p className="text-base">&copy; {year} Ndung'u Muigai - All rights reserved</p>
             </div>
         </footer>
     );
