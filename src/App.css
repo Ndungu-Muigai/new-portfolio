@@ -6,6 +6,10 @@ a
 {
   @apply  bg-gold
 }
+.test
+{
+  @apply bg-new
+}
 .icon
 {
   @apply text-lg md:text-xl;
