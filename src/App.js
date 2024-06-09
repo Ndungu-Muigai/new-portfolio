@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="mt-18 min-h-fit flex flex-col">
+      <div className="mt-16 min-h-fit flex flex-col">
         <div className="flex-grow">
           <Routes>
             <Route exact path='/' element={<Home/>}></Route>

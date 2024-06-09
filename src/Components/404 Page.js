@@ -7,7 +7,7 @@ const ErrorPage = () =>
     const navigate=useNavigate()
     return (  
         <>
-            <div className='error-message flex flex-col items-center justify-center'>
+            <div className='error-message flex flex-col items-center justify-center h-screen'>
                 <img src={Image} alt='404 Error' className='w-1/2'/>
                 <h1>404- Page Not Found</h1>
                 <p>The page you are looking for might have been removed, had its name changed or is temporarily unavailable</p>
