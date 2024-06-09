@@ -24,8 +24,8 @@ const Home = () => {
                     />
                 </p>
                 <div className="flex flex-row justify-center space-x-10">
-                    <Link to="/about" className="button font-bold py-2 px-4 rounded hover:bg-blue-600">About Me</Link>
-                    <Link to="/contacts" className="button font-bold py-2 px-4 rounded hover:bg-blue-600">Contact Me</Link>
+                    <Link to="/about" className="button font-bold py-2 px-4 rounded hover:text-white hover:underline">About Me</Link>
+                    <Link to="/contacts" className="button font-bold py-2 px-4 rounded hover:text-white hover:underline">Contact Me</Link>
                 </div>
             </div>
             <div className="w-1/2 mr-8">
