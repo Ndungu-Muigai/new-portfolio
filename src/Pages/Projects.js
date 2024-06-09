@@ -18,7 +18,7 @@ const Projects = () =>
                         <Link to={demo_link} target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white -font-bold py-2 px-4 rounded mr-2">Live Demo</Link>
                         <Link to={source_code} target="_blank" className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Source Code</Link>
                     </div>
-                </div>
+                </div> 
             )
         }
     )
