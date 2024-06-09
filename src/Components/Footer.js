@@ -21,14 +21,14 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col mx-4 md:mx-10 space-y-3">
                     <h1 className="uppercase text-cyan-500">Find me on social media</h1>
-                    <div className="flex flex-wrap mt-4 space-x-6 md:space-x-18">
-                        <Link className="text-2xl"><FaGithub /></Link>
-                        <Link className="text-2xl"><FaLinkedinIn /></Link>
-                        <Link className="text-2xl"><FaXTwitter /></Link>
-                        <Link className="text-2xl"><FaInstagram /></Link>
-                        <Link className="text-2xl"><FaWhatsapp /></Link>
-                        <Link className="text-2xl"><FaPhoneVolume /></Link>
-                        <Link className="text-2xl"><IoMailOutline /></Link>
+                    <div className="flex flex-wrap mt-4 space-x-4 md:space-x-18">
+                        <Link className="icon"><FaGithub /></Link>
+                        <Link className="icon"><FaLinkedinIn /></Link>
+                        <Link className="icon"><FaXTwitter /></Link>
+                        <Link className="icon"><FaInstagram /></Link>
+                        <Link className="icon"><FaWhatsapp /></Link>
+                        <Link className="icon"><FaPhoneVolume /></Link>
+                        <Link className="icon"><IoMailOutline /></Link>
                     </div>
                     <img src={Logo} alt="Logo" className="w-full mt-4" />
                 </div>

@@ -2,3 +2,7 @@ a
 {
   @apply  hover:text-cyan-400 hover:underline
 }
+.icon
+{
+  @apply text-lg md:text-2xl;
+}
