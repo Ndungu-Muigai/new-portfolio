@@ -1,6 +1,10 @@
-.nav-links
+a
 {
-  @apply  hover:text-cyan-400 hover:underline
+  @apply  hover:text-amber-600
+}
+.button
+{
+  @apply  bg-amber-600
 }
 .icon
 {

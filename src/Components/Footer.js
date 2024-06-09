@@ -10,7 +10,7 @@ const Footer = () => {
     const year = date.getFullYear();
 
     return (
-        <footer className="flex flex-col items-center bg-white border-t-2">
+        <footer className="flex flex-col items-center border-t-2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full max-w-4xl mx-auto p-3">
                 <div className="flex flex-col mx-2 md:mx-4 space-y-2">
                     <h2 className="text-lg">Quick links</h2>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text-center w-full max-w-4xl mx-auto mb-2">
-                <hr className="my-2" />
+                <hr className="my-2"/>
                 <p className="text-base">&copy; {year} Ndung'u Muigai - All rights reserved</p>
             </div>
         </footer>

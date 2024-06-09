@@ -12,7 +12,7 @@ import About from './Pages/About';
 
 function App() {
   return (
-    <>
+    <div className="bg-black min-h-screen text-white">
       <Navbar />
       <div className="mt-16 min-h-fit flex flex-col">
         <Routes>
@@ -23,7 +23,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

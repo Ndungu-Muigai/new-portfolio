@@ -5,7 +5,7 @@ import Logo from '../assets/Images/Logo.png';
 
 const Home = () => {
     return (
-        <div className="flex justify-center items-center h-screen bg-gradient-to-br from-blue-500 to-purple-600">
+        <div className="flex justify-center items-center h-screen ">
             <div className="text-center text-white w-1/2 mr-8">
                 <h1 className="text-3xl md:text-4xl font-bold mb-4">Hello there</h1>
                 <p className="text-lg md:text-xl mb-4">My name is Samuel Muigai</p>
@@ -24,8 +24,8 @@ const Home = () => {
                     />
                 </p>
                 <div className="flex flex-row justify-center space-x-10">
-                    <Link to="/about" className="bg-blue-700 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">About Me</Link>
-                    <Link to="/contacts" className="bg-blue-700 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Contact Me</Link>
+                    <Link to="/about" className="button font-bold py-2 px-4 rounded hover:bg-blue-600">About Me</Link>
+                    <Link to="/contacts" className="button font-bold py-2 px-4 rounded hover:bg-blue-600">Contact Me</Link>
                 </div>
             </div>
             <div className="w-1/2 mr-8">
