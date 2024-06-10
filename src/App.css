@@ -6,10 +6,6 @@ a
 {
   @apply  bg-gold hover:text-black 
 }
-.test
-{
-  @apply bg-new
-}
 .icon
 {
   @apply text-lg md:text-xl;

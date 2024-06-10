@@ -1,6 +1,7 @@
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer"
 import Projects from "./Projects";
+import Skills from "./Skills";
 import Contacts from "./Contacts"
 
 const About = () =>
@@ -30,6 +31,7 @@ const About = () =>
                 <button className="button font-bold mb-2 py-2 px-4 rounded md:mb-8" onClick={openPdfInNewWindow}>Download my resume</button>
             </div>
             <Projects/>
+            <Skills/>
             <Contacts/>
             <Footer/>
         </>

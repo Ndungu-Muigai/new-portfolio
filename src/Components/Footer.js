@@ -20,8 +20,8 @@ const Footer = () => {
                     <Link to={"/contacts"}>Contacts</Link>
                 </div>
                 <div className="flex flex-col mx-2 md:mx-4 space-y-2">
-                    <h2 className="text-lg mt-3">Find me on social media</h2>
-                    <div className="flex flex-wrap mt-2 space-x-3 md:space-x-4">
+                    <h2 className="text-lg text-center">Find me on social media</h2>
+                    <div className="flex flex-wrap justify-center items-center mt-2 space-x-3 md:space-x-4">
                         <Link className="icon" to={"https://www.github.com/ndungu-muigai"} target="_blank" title="GitHub"><FaGithub /></Link>
                         <Link className="icon" to={"https://www.linkedin.com/in/samuel-muigai-560355224/"} target="_blank" title="LinkedIn"><FaLinkedinIn /></Link>
                         <Link className="icon" to={"https://www.twitter.com/MzeeMuigai"} target="_blank" title="X"><FaXTwitter /></Link>
