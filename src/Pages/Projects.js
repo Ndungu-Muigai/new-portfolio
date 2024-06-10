@@ -8,7 +8,7 @@ const Projects = () =>
             let {id, icon, title, description, demo_link, source_code}=project
 
             return(
-                <div key={id} className="w-64 max-w-xs sm:w-80 sm:max-w-sm rounded overflow-hidden shadow-lg m-4 transform hover:scale-105 transition-transform duration-300 border-2 p-2">
+                <div key={id} className="w-64 max-w-xs sm:w-80 sm:max-w-sm rounded overflow-hidden shadow-lg m-4 transform hover:scale-95 transition-transform duration-300 border-2 p-2">
                     <i className={`w-full fa-icons ${icon}`}></i>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{title}</div>
