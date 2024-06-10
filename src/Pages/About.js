@@ -1,3 +1,4 @@
+import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer"
 import Projects from "./Projects";
 import Contacts from "./Contacts"
@@ -11,6 +12,7 @@ const About = () =>
 
     return (
         <>
+            <Navbar/>
             <div className="h-max flex flex-col justify-center items-center p-4 md:px-20">
                 <h1 className="text-white text-3xl md:text-4xl font-bold mb-4">Get to know me</h1>
                 <p className="text-white text-center md:text-left mb-4 max-w-lg">

@@ -1,3 +1,4 @@
+import Navbar from "../Components/Navbar"
 import projects from "../Data/Projects.json"
 import { Link } from "react-router-dom"
 
@@ -23,12 +24,15 @@ const Projects = () =>
         }
     )
     return (
-        <div className="min-h-screen p-8 ">
-            <h1 className="text-3xl font-bold mb-2">Projects</h1>
-            <div className="flex flex-wrap justify-center">
-                {projectsMap}
+        <>
+            <Navbar/>
+            <div className="min-h-screen p-8 ">
+                <h1 className="text-3xl font-bold mb-2">Projects</h1>
+                <div className="flex flex-wrap justify-center">
+                    {projectsMap}
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
