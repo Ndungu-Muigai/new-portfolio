@@ -8,6 +8,7 @@ import Projects from './Pages/Projects';
 import Home from './Pages/Home';
 import ErrorPage from './Components/404 Page';
 import About from './Pages/About';
+import Contacts from './Pages/Contacts';
 
 function App() {
   return (
@@ -16,8 +17,7 @@ function App() {
       <div className="mt-16 min-h-fit flex flex-col">
         <Routes>
           <Route exact path='/' element={<Home/>}></Route>
-          <Route exact path='/about' element={<About/>}></Route>
-          <Route path='/projects' element={<Projects/>}></Route>
+          <Route path="/about/*" element={<About />} />
           <Route exact path='*' element={<ErrorPage/>}></Route>
         </Routes>
       </div>
