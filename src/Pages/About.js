@@ -1,25 +1,26 @@
-import { useEffect, useState } from "react"
-import { useLocation } from "react-router-dom"
-import Footer from "../Components/Footer"
-import Projects from "./Projects"
-import Contacts from "./Contacts"
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import Footer from "../Components/Footer";
+import Projects from "./Projects";
+import Contacts from "./Contacts";
 
-const About = () => 
-{
-    const [section, setSection] = useState(null)
-    const location = useLocation()
+const About = () => {
+    const [section, setSection] = useState(null);
+    const [isVisible, setIsVisible] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
-        if (location.hash) 
-        {
-            setSection(location.hash.substring(1))
+        if (location.hash) {
+            setSection(location.hash.substring(1));
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
         }
-    }, [location])
+    }, [location]);
 
-    const openPdfInNewWindow = () => 
-    {
+    const openPdfInNewWindow = () => {
         window.open(require("../assets/CV/Curriculum Vitae.pdf"));
-    }
+    };
 
     return (
         <>
@@ -39,8 +40,12 @@ const About = () =>
                 </p>
                 <button className="button font-bold mb-2 py-2 px-4 rounded md:mb-8" onClick={openPdfInNewWindow}>Download my resume</button>
             </div>
-            {section === "projects" && <Projects />}
-            {section === "contacts" && <Contacts />}
+
+            <div className={`transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'} h-screen flex justify-center items-center`}>
+                {section === "projects" && <Projects />}
+                {section === "contacts" && <Contacts />}
+            </div>
+
             <Footer />
         </>
     );
