@@ -5,6 +5,7 @@ a
 .button
 {
   @apply  bg-gold
+  @apply hover:text-white hover:underline
 }
 .test
 {

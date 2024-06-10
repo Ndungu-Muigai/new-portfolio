@@ -15,8 +15,8 @@ const Projects = () =>
                         <p className="text-base">{description}</p>
                     </div>
                     <div className="px-6 py-4 flex justify-between">
-                        <Link to={demo_link} target="_blank" className="button font-bold py-2 px-4 rounded mr-2 hover:text-cyan-500 hover:underline">Live Demo</Link>
-                        <Link to={source_code} target="_blank" className="button font-bold py-2 px-4 rounded hover:text-cyan-500 hover:underline">Source Code</Link>
+                        <Link to={demo_link} target="_blank" className="button font-bold py-2 px-4 rounded mr-2">Live Demo</Link>
+                        <Link to={source_code} target="_blank" className="button font-bold py-2 px-4 rounded">Source Code</Link>
                     </div>
                 </div> 
             )
