@@ -2,7 +2,6 @@ import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
 
-import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 
 import Projects from './Pages/Projects';
@@ -22,7 +21,6 @@ function App() {
           <Route exact path='*' element={<ErrorPage/>}></Route>
         </Routes>
       </div>
-      <Footer />
     </div>
   );
 }
