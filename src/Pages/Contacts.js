@@ -35,7 +35,7 @@ const Contacts = () =>
                         <textarea id="message" value={formData.message} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" rows="4" placeholder="Your Message"></textarea>
                     </div>
                     <div className="flex items-center justify-center">
-                        <button type="submit" className="bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Send Message</button>
+                        <button type="submit" className="button px-4 py-2 rounded-lg focus:outline-none">Send Message</button>
                     </div>
                 </form>
             </div>
