@@ -4,7 +4,7 @@ a
 }
 .button
 {
-  @apply  bg-gold hover:text-white hover:underline
+  @apply  bg-gold hover:text-black 
 }
 .test
 {
