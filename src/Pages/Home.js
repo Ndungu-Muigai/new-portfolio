@@ -5,7 +5,7 @@ import Logo from '../assets/Images/Logo.png';
 
 const Home = () => {
     return (
-        <div className="flex justify-center items-center h-96 md:h-screen">
+        <div className="flex justify-center items-center h-screen">
             <div className="text-center text-white w-full md:w-1/2 md:mr-8">
                 <h1 className="text-3xl md:text-4xl font-bold mb-4">Hello there</h1>
                 <p className="text-lg md:text-xl mb-4">My name is Samuel Muigai</p>
