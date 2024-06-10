@@ -2,13 +2,10 @@ import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
 
-import Navbar from './Components/Navbar';
 
-import Projects from './Pages/Projects';
 import Home from './Pages/Home';
 import ErrorPage from './Components/404 Page';
 import About from './Pages/About';
-import Contacts from './Pages/Contacts';
 
 function App() {
   return (
