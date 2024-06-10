@@ -1,26 +1,9 @@
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom"
 import Footer from "../Components/Footer"
-import Projects from "./Projects"
+import Projects from "./Projects";
 import Contacts from "./Contacts"
 
-const About = () => 
+const About = () =>
 {
-    const [section, setSection] = useState(null)
-    const location = useLocation()
-
-    useEffect(() => 
-    {
-        if (location.hash) 
-        {
-            setSection(location.hash.substring(1));
-        } 
-        else 
-        {
-            setSection(null);
-        }
-    }, [location])
-
     const openPdfInNewWindow = () => 
     {
         window.open(require("../assets/CV/Curriculum Vitae.pdf"));
@@ -28,7 +11,7 @@ const About = () =>
 
     return (
         <>
-            <div className={`transition-opacity duration-700 ${section ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100 h-max'} flex flex-col justify-center items-center p-4 md:px-20`}>
+            <div className="h-max flex flex-col justify-center items-center p-4 md:px-20">
                 <h1 className="text-white text-3xl md:text-4xl font-bold mb-4">Get to know me</h1>
                 <p className="text-white text-center md:text-left mb-4 max-w-lg">
                     Hi. My name is Samuel Muigai, a Full Stack Software Engineer based in Nairobi, Kenya. I have a bachelor's degree in Telecommunications from Strathmore University and I have also completed Moringa School's Software Engineering course.
@@ -44,15 +27,11 @@ const About = () =>
                 </p>
                 <button className="button font-bold mb-2 py-2 px-4 rounded md:mb-8" onClick={openPdfInNewWindow}>Download my resume</button>
             </div>
-
-            <div className={`transition-opacity duration-700 ${section ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'} h-screen flex justify-center items-center`}>
-                {section === "projects" && <Projects />}
-                {section === "contacts" && <Contacts />}
-            </div>
-
-            <Footer />
+            <Projects/>
+            <Contacts/>
+            <Footer/>
         </>
     )
-}
+};
 
 export default About;
