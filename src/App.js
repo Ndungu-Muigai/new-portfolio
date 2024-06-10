@@ -13,7 +13,6 @@ import Contacts from './Pages/Contacts';
 function App() {
   return (
     <div className="bg-black min-h-screen text-white">
-      {/* <Navbar /> */}
       <div className="min-h-fit flex flex-col">
         <Routes>
           <Route exact path='/' element={<Home/>}></Route>
