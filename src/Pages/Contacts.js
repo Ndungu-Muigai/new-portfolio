@@ -21,7 +21,7 @@ const Contacts = () =>
         <>
             <div className="flex items-center justify-center">
                 <div className="p-8 rounded-lg shadow-lg w-full max-w-md">
-                    <h1 className="text-2xl font-bold mb-6 text-center">Contact M</h1>
+                    <h1 className="text-2xl font-bold mb-6 text-center">Contact Me</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
                             <label className="block font-bold mb-2" htmlFor="name">Name</label>
