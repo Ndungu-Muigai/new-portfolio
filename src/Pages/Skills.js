@@ -11,20 +11,50 @@ const Skills = () =>
             <h1>Skills</h1>
             <div className="flex justify-center items-center mt-2">
                 <div className="grid grid-cols-4 gap-14">
-                    <div className="flex flex-col justify-center items-center">
-                        <FaHtml5 className="skills-icons"/>
+                    <div className="skills-cols">
+                        <FaHtml5 className="skills-icons bg-html"/>
                         <p>HTML5</p>
                     </div>
-                    <FaCss3Alt className="skills-icons"/>
-                    <FaBootstrap className="skills-icons"/>
-                    <RiTailwindCssFill className="skills-icons"/>
-                    <IoLogoJavascript className="skills-icons"/>
-                    <FaReact className="skills-icons"/>
-                    <FaPython className="skills-icons"/>
-                    <SiMysql className="skills-icons"/>
-                    <BiLogoPostgresql className="skills-icons"/>
-                    <FaGitAlt className="skills-icons"/>
-                    <FaGithub className="skills-icons"/>
+                    <div className="skills-cols">
+                        <FaCss3Alt className="skills-icons bg-blue"/>
+                        <p>CSS3</p>
+                    </div>
+                    <div className="skills-cols">
+                        <FaBootstrap className="skills-icons bg-purple"/>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div className="skills-cols">
+                        <RiTailwindCssFill className="skills-icons bg-lightblue"/>
+                        <p>Tailwind</p>
+                    </div>
+                    <div className="skills-cols">
+                        <IoLogoJavascript className="skills-icons bg-yellow"/>
+                        <p>JavaScript</p>
+                    </div>
+                    <div className="skills-cols">
+                        <FaReact className="skills-icons bg-lightblue"/>
+                        <p>React</p>
+                    </div>
+                    <div className="skills-cols">
+                        <FaPython className="skills-icons "/>
+                        <p>Python</p>
+                    </div>
+                    <div className="skills-cols">
+                        <SiMysql className="skills-icons bg-blue"/>
+                        <p>MySQL</p>
+                    </div>
+                    <div className="skills-cols">
+                        <BiLogoPostgresql className="skills-icons bg-blue"/>
+                        <p>PostgreSQl</p>
+                    </div>
+                    <div className="skills-cols">
+                        <FaGitAlt className="skills-icons bg-git"/>
+                        <p>Git</p>
+                    </div>
+                    <div className="skills-cols">
+                        <FaGithub className="skills-icons"/>
+                        <p>GitHub</p>
+                    </div>
                 </div>
             </div>
         </>

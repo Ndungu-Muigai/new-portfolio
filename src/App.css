@@ -26,3 +26,7 @@ h1
 {
   @apply text-4xl m-5 md:text-5xl
 }
+.skills-cols
+{
+  @apply flex flex-col justify-center items-center
+}
