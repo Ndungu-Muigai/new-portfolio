@@ -10,7 +10,7 @@ const Skills = () =>
     return ( 
         <>
             <h1>Skills</h1>
-            <div className="grid grid-cols-4 gap-4 p-4 text-center">
+            <div className="grid grid-cols-4 gap-2 p-4 justify-center items-center">
                 <FaHtml5 className="skills-icons"/>
                 <FaCss3Alt className="skills-icons"/>
                 <FaBootstrap className="skills-icons"/>
