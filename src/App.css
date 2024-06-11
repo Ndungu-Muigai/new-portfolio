@@ -22,3 +22,7 @@ h1
 {
   @apply text-4xl text-center md:text-5xl
 }
+.skills-icons
+{
+  @apply text-4xl p-1
+}
