@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaBootstrap, FaGitAlt, FaGithub } from "react-icons/fa"
-import { IoLogoJavascript } from "react-icons/io5"
+import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiMysql } from "react-icons/si"
 import { BiLogoPostgresql } from "react-icons/bi"
