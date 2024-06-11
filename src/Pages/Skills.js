@@ -28,7 +28,7 @@ const Skills = () =>
                         <p>Tailwind</p>
                     </div>
                     <div className="skills-cols">
-                        <IoLogoJavascript className="skills-icons bg-yellow"/>
+                        <IoLogoJavascript className="skills-icons bg-yellow-400"/>
                         <p>JavaScript</p>
                     </div>
                     <div className="skills-cols">
