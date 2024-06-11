@@ -11,17 +11,36 @@ const Skills = () =>
         <>
             <h1>Skills</h1>
             <div className="flex flex-row justify-center items-center flex-wrap space-x-6">
-                <FaHtml5 className="skills-icons"/>
-                <FaCss3Alt className="skills-icons"/>
-                <FaBootstrap className="skills-icons"/>
-                <RiTailwindCssFill className="skills-icons"/>
-                <IoLogoJavascript className="skills-icons"/>
-                <FaReact className="skills-icons"/>
-                <FaPython className="skills-icons"/>
-                <SiMysql className="skills-icons"/>
-                <BiLogoPostgresql className="skills-icons"/>
-                <FaGitAlt className="skills-icons"/>
-                <FaGithub className="skills-icons"/>
+                <div>
+                    <FaHtml5 className="skills-icons"/>
+                </div>
+                <div>
+                    <FaBootstrap className="skills-icons"/>
+                </div>
+                <div>
+                    <RiTailwindCssFill className="skills-icons"/>
+                </div>
+                <div>
+                    <IoLogoJavascript className="skills-icons"/>
+                </div>
+                <div>
+                    <FaReact className="skills-icons"/>
+                </div>
+                <div>
+                    <FaPython className="skills-icons"/>
+                </div>
+                <div>
+                    <SiMysql className="skills-icons"/>
+                </div>
+                <div>
+                    <BiLogoPostgresql className="skills-icons"/>
+                </div>
+                <div>
+                    <FaGitAlt className="skills-icons"/>
+                </div>
+                <div>
+                    <FaGithub className="skills-icons"/>               
+                </div>
             </div>
         </>
      );
