@@ -4,42 +4,46 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
-
 const Skills = () => 
 {
     return ( 
         <>
             <h1>Skills</h1>
             <div className="flex flex-row justify-center items-center flex-wrap w-1/2">
-                <div className="space-x-6">
-                    <FaHtml5 className="skills-icons"/>
-                </div>
-                <div className="space-x-6">
-                    <FaBootstrap className="skills-icons"/>
-                </div>
-                <div className="space-x-6">
-                    <RiTailwindCssFill className="skills-icons"/>
-                </div>
-                <div className="space-x-6">
-                    <IoLogoJavascript className="skills-icons"/>
-                </div>
-                <div className="space-x-6">
-                    <FaReact className="skills-icons"/>
-                </div>
-                <div className="space-x-6">
-                    <FaPython className="skills-icons"/>
-                </div>
-                <div className="space-x-6">
-                    <SiMysql className="skills-icons"/>
-                </div>
-                <div className="space-x-6">
-                    <BiLogoPostgresql className="skills-icons"/>
-                </div>
-                <div className="space-x-6">
-                    <FaGitAlt className="skills-icons"/>
-                </div>
-                <div className="space-x-6">
-                    <FaGithub className="skills-icons"/>               
+                <div className="grid grid-cols-4 gap-4">
+                    <div className="skills-icons border p-2">
+                        <FaHtml5 />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <FaCss3Alt />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <FaReact />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <FaPython />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <FaBootstrap />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <IoLogoJavascript />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <RiTailwindCssFill />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <SiMysql />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <BiLogoPostgresql />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <FaGitAlt />
+                    </div>
+                    <div className="skills-icons border p-2">
+                        <FaGithub />
+                    </div>
                 </div>
             </div>
         </>
