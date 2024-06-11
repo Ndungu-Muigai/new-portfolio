@@ -23,7 +23,7 @@ const Skills = () =>
                 <FaGitAlt className="skills-icons"/>
                 <FaGithub className="skills-icons"/>
             </div>
-        </>
+        </div>
      );
 }
  
