@@ -30,3 +30,16 @@ h1
 {
   @apply flex flex-col justify-center items-center
 }
+.bg-blue 
+{
+  background-color: #2965f1;
+}
+
+.bg-purple 
+{
+  background-color: #7952b3;
+}
+.bg-lightblue 
+{
+  background-color: #61dafb;
+}
