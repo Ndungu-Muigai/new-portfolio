@@ -5,6 +5,7 @@ const Contacts = () =>
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        subject: "",
         message: ''
     });
 
@@ -30,6 +31,10 @@ const Contacts = () =>
                         <div className="mb-4">
                             <label className="block font-bold mb-2" htmlFor="email">Email</label>
                             <input type="email" id="email" value={formData.email} onChange={handleChange} className="w-full bg-inherit px-3 py-2 border border-gray-300 rounded-lg" placeholder="Your Email Address" required/>
+                        </div>
+                        <div className="mb-4">
+                            <label className="block font-bold mb-2" htmlFor="subject">Subject</label>
+                            <input type="text" id="subject" value={formData.subject} onChange={handleChange} className="w-full bg-inherit px-3 py-2 border border-gray-300 rounded-lg" placeholder="Subject" required/>
                         </div>
                         <div className="mb-4">
                             <label className="block font-bold mb-2" htmlFor="message">Message</label>
