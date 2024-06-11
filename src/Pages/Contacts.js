@@ -19,7 +19,7 @@ const Contacts = () =>
 
     return (
         <>
-            <div className="min-h-screen flex items-center justify-center">
+            <div className="flex items-center justify-center">
                 <div className="p-8 rounded-lg shadow-lg w-full max-w-md">
                     <h1 className="text-2xl font-bold mb-6 text-center">Contact Us</h1>
                     <form onSubmit={handleSubmit}>
