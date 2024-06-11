@@ -36,7 +36,7 @@ const Skills = () =>
                         <p>React</p>
                     </div>
                     <div className="skills-cols">
-                        <FaPython className="skills-icons "/>
+                        <FaPython className="skills-icons text-python"/>
                         <p>Python</p>
                     </div>
                     <div className="skills-cols">

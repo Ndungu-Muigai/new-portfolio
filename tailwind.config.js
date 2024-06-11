@@ -9,6 +9,7 @@ module.exports = {
         dark: "#090909",
         html: "#e34c26",
         git: "#f14e32",
+        python: '#3776AB',
       },
     },
   },
