@@ -10,7 +10,7 @@ const Skills = () =>
     return ( 
         <>
             <h1>Skills</h1>
-            <div className="grid grid-cols-4 gap-2 p-8">
+            <div className="grid grid-cols-4 gap-1.5 p-3">
                 <FaHtml5/>
                 <FaCss3Alt/>
                 <FaBootstrap/>
