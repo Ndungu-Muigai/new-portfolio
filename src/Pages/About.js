@@ -16,7 +16,7 @@ const About = () =>
         <>
             <Navbar/>
             <div className="flex flex-row">
-                <div className="flex justify-center items-center w-1/2 px-20">
+                <div className="hidden md:block flex justify-center items-center w-1/2 px-20">
                     <img src={Logo} alt="Profile" className="w-full items-center"/>
                 </div>
                 <div className="mt-16 md:mt-20 h-max flex flex-col justify-center items-center p-4 md:px-20">
