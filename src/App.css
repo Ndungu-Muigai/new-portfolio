@@ -1,28 +1,28 @@
-a 
+a
 {
-  @apply hover:text-gold;
+  @apply  hover:text-gold
 }
-.button 
+.button
 {
-  @apply bg-gold hover:text-black;
+  @apply  bg-gold hover:text-black 
 }
-.icon 
+.icon
 {
   @apply text-lg md:text-xl;
 }
-h2 
+h2
 {
-  @apply font-bold uppercase text-lg md:text-2xl underline;
+  @apply font-bold uppercase text-lg md:text-2xl underline
 }
-h1 
+h1
 {
-  @apply font-bold uppercase text-lg md:text-4xl text-center;
+  @apply font-bold uppercase text-lg md:text-4xl text-center
 }
-.fa-icons 
+.fa-icons
 {
-  @apply text-4xl text-center md:text-5xl;
+  @apply text-4xl text-center md:text-5xl
 }
-.skills-icons 
+.skills-icons
 {
-  @apply text-4xl m-5 border p-2;
+  @apply text-4xl m-5
 }
