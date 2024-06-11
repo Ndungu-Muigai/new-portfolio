@@ -30,16 +30,15 @@ h1
 {
   @apply flex flex-col justify-center items-center
 }
-.bg-blue 
+.text-blue 
 {
-  background-color: #2965f1;
+  color: #2965f1; /* CSS3 color, and can be reused for MySQL and PostgreSQL */
 }
-
-.bg-purple 
+.text-purple 
 {
-  background-color: #7952b3;
+  color: #7952b3; /* Bootstrap color */
 }
-.bg-lightblue 
+.text-lightblue 
 {
-  background-color: #61dafb;
+  color: #61dafb; /* React color */
 }
