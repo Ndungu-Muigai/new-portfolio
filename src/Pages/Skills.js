@@ -1,17 +1,16 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaBootstrap, FaGitAlt, FaGithub } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMysql } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
-
+import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaBootstrap, FaGitAlt, FaGithub } from "react-icons/fa"
+import { IoLogoJavascript } from "react-icons/io5"
+import { RiTailwindCssFill } from "react-icons/ri"
+import { SiMysql } from "react-icons/si"
+import { BiLogoPostgresql } from "react-icons/bi"
 
 const Skills = () => 
 {
     return ( 
         <>
             <h1>Skills</h1>
-            <div className="flex justify-center items-center space-x-12">
-                <div className="grid grid-cols-4 gap-4">
+            <div className="flex justify-center items-center">
+                <div className="grid grid-cols-4 gap-8">
                     <FaHtml5 className="skills-icons"/>
                     <FaCss3Alt className="skills-icons"/>
                     <FaBootstrap className="skills-icons"/>
