@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaBootstrap, FaGitAlt, FaGithub } from "react-icons/fa"
+import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaBootstrap, FaGitAlt, FaGithub, FaAws } from "react-icons/fa"
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiMysql } from "react-icons/si"
@@ -54,6 +54,10 @@ const Skills = () =>
                     <div className="skills-cols">
                         <FaGithub className="skills-icons"/>
                         <p>GitHub</p>
+                    </div>
+                    <div className="skills-cols">
+                        <FaAws className="skills-icons text-aws"/>
+                        <p>AWS</p>
                     </div>
                 </div>
             </div>
