@@ -36,9 +36,15 @@ const About = () =>
                     <button className="button font-bold mb-2 py-2 px-4 rounded md:mb-8" onClick={openPdfInNewWindow}>Download my resume</button>
                 </div>
             </div>
-            <Projects/>
-            <Skills/>
-            <Contacts/>
+            <div id="projects">
+                <Projects/>
+            </div>
+            <div id="skills">
+                <Skills/>
+            </div>
+            <div id="contacts">
+                <Contacts/>
+            </div>
             <Footer/>
         </>
     )
