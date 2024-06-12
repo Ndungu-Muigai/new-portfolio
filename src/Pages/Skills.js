@@ -10,7 +10,7 @@ const Skills = () =>
         <>
             <h1>Skills</h1>
             <div className="flex justify-center items-center mt-2 mx-10">
-                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-10 gap-14">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-14">
                     <div className="skills-cols">
                         <FaHtml5 className="skills-icons text-html"/>
                         <p>HTML5</p>
