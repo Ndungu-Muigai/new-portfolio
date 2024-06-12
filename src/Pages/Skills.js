@@ -45,7 +45,7 @@ const Skills = () =>
                     </div>
                     <div className="skills-cols">
                         <BiLogoPostgresql className="skills-icons text-blue"/>
-                        <p>PostgreSQl</p>
+                        <p>PostgreSQL</p>
                     </div>
                     <div className="skills-cols">
                         <FaGitAlt className="skills-icons text-git"/>
