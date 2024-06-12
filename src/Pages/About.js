@@ -6,8 +6,6 @@ import Contacts from "./Contacts"
 
 import Logo from "../assets/Images/Logo.png"
 
-import { HashRouter, Routes, Route } from "react-router-dom";
-
 const About = () =>
 {
     const openPdfInNewWindow = () => 
@@ -39,14 +37,9 @@ const About = () =>
                     <button className="button font-bold mb-2 py-2 px-4 rounded md:mb-8" onClick={openPdfInNewWindow}>Download my resume</button>
                 </div>
             </div>
-            <HashRouter base="/about">
-                <Routes>
-                    <Route path="#projects" element={<Projects/>}></Route>
-                    <Route path="#skills" element={<Skills/>}></Route>
-                    <Route path="#contacts" element={<Contacts/>}></Route>
-                </Routes>
-            </HashRouter>
-            
+            <Projects/>
+            <Skills/>
+            <Contacts/>
             <Footer/>
         </>
     )
