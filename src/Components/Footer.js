@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import Logo from '../assets/Images/Logo.png';
+import { Link } from "react-router-dom"
+import Logo from '../assets/Images/Logo.png'
 
-import { FaWhatsapp, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { FaXTwitter, FaPhoneVolume } from "react-icons/fa6";
-import { IoMailOutline } from "react-icons/io5";
+import { FaWhatsapp, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa"
+import { FaXTwitter, FaPhoneVolume } from "react-icons/fa6"
+import { IoMailOutline } from "react-icons/io5"
 
 const Footer = () => {
     const date = new Date();
@@ -41,4 +41,4 @@ const Footer = () => {
     );
 }
 
-export default Footer;
+export default Footer

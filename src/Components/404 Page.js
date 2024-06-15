@@ -1,5 +1,5 @@
 import Image from '../assets/Images/Error.png'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 import '../assets/CSS/Error.css'
 
 const ErrorPage = () => 
@@ -17,4 +17,4 @@ const ErrorPage = () =>
     );
 }
  
-export default ErrorPage;
+export default ErrorPage
