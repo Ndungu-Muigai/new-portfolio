@@ -25,7 +25,7 @@ const Home = () =>
                     />
                 </p>
                 <div className="flex flex-row justify-center space-x-10 p-2 items-center">
-                    <Link to="/about" className="button font-bold py-2 px-4 rounded">About Me</Link>
+                    <Link to="/about" className="button py-2 px-4 rounded">About Me</Link>
                     {/* <Link to="/contacts" className="button font-bold py-2 px-4 rounded">Contact Me</Link> */}
                 </div>
             </div>

@@ -41,7 +41,7 @@ const Contacts = () =>
                             <textarea id="message" value={formData.message} onChange={handleChange} className="w-full bg-inherit px-3 py-2 border border-gray-300 rounded-lg" rows="4" placeholder="Your Message" required></textarea>
                         </div>
                         <div className="flex items-center justify-center">
-                            <button type="submit" className="button font-bold px-4 py-2 rounded-lg focus:outline-none">Send Message</button>
+                            <button type="submit" className="button px-4 py-2 rounded-lg focus:outline-none">Send Message</button>
                         </div>
                     </form>
                 </div>
