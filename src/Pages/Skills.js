@@ -40,7 +40,7 @@ const Skills = () =>
                         <p>Python</p>
                     </div>
                     <div className="skills-cols">
-                        <FaPhp className="skills-icons text-python"/>
+                        <FaPhp className="skills-icons text-php"/>
                         <p>PHP</p>
                     </div>
                     <div className="skills-cols">
