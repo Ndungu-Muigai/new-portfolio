@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaBootstrap, FaGitAlt, FaGithub, FaAws } from "react-icons/fa"
+import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaBootstrap, FaGitAlt, FaGithub, FaAws, FaPhp  } from "react-icons/fa"
 import { IoLogoJavascript } from "react-icons/io"
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiMysql } from "react-icons/si"
@@ -38,6 +38,10 @@ const Skills = () =>
                     <div className="skills-cols">
                         <FaPython className="skills-icons text-python"/>
                         <p>Python</p>
+                    </div>
+                    <div className="skills-cols">
+                        <FaPhp className="skills-icons text-python"/>
+                        <p>PHP</p>
                     </div>
                     <div className="skills-cols">
                         <SiMysql className="skills-icons text-blue"/>
