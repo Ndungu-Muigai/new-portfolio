@@ -11,7 +11,7 @@ const ErrorPage = () =>
                 <img src={Image} alt='404 Error' className='w-1/2'/>
                 <h1>404- Page Not Found</h1>
                 <p className='text-left md:text-center'>The page you are looking for might have been removed, had its name changed or is temporarily unavailable</p>
-                <button className="mb-3 button" onClick={() => navigate(-1)}>Go back</button>
+                <button className="mb-3 button font-bold" onClick={() => navigate(-1)}>Go back</button>
             </div>
         </>
     );
