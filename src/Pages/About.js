@@ -1,7 +1,7 @@
-import Navbar from "../Components/Navbar";
+import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
-import Projects from "./Projects";
-import Skills from "./Skills";
+import Projects from "./Projects"
+import Skills from "./Skills"
 import Contacts from "./Contacts"
 
 import Logo from "../assets/Images/Logo.png"

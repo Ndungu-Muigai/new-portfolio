@@ -1,9 +1,10 @@
-import { ReactTyped } from "react-typed";
-import { Link } from "react-router-dom";
+import { ReactTyped } from "react-typed"
+import { Link } from "react-router-dom"
 
-import Logo from '../assets/Images/Logo.png';
+import Logo from '../assets/Images/Logo.png'
 
-const Home = () => {
+const Home = () => 
+{
     return (
         <div className="flex flex-col md:flex-row justify-center items-center h-screen">
             <div className="text-center text-white w-full md:w-1/2 md:mr-8">
@@ -32,7 +33,7 @@ const Home = () => {
                 <img src={Logo} alt="Samuel Ndung'u Muigai" className="w-full rounded-lg shadow-xl"/>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Home;
+export default Home

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 const Contacts = () => 
 {
@@ -7,7 +7,7 @@ const Contacts = () =>
         email: '',
         subject: "",
         message: ''
-    });
+    })
 
     const handleChange = e => setFormData({...formData,[e.target.id]: e.target.value})
 
@@ -16,7 +16,7 @@ const Contacts = () =>
         e.preventDefault();
         // Handle form submission logic here, e.g., send the form data to an API
         console.log('Form submitted:', formData);
-    };
+    }
 
     return (
         <>
@@ -47,7 +47,7 @@ const Contacts = () =>
                 </div>
             </div>
         </>
-    );
+    )
 }
 
-export default Contacts;
+export default Contacts
