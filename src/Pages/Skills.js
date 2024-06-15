@@ -7,7 +7,7 @@ import { BiLogoPostgresql } from "react-icons/bi"
 const Skills = () => 
 {
     return ( 
-        <>
+        <div id="skills">
             <h1>Skills</h1>
             <div className="flex justify-center items-center mt-2 mx-10">
                 <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-14">
@@ -61,7 +61,7 @@ const Skills = () =>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
  
