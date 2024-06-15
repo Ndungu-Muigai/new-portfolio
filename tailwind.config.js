@@ -10,6 +10,9 @@ module.exports = {
         html: "#e34c26",
         git: "#f14e32",
         python: '#3776AB',
+        screens: {
+          'xs': '320px', // Custom breakpoint for 320px screens
+        },
       },
     },
   },
