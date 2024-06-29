@@ -3,6 +3,7 @@ import { IoLogoJavascript } from "react-icons/io"
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiMysql } from "react-icons/si"
 import { BiLogoPostgresql } from "react-icons/bi"
+import { DiMongodb } from "react-icons/di";
 
 const Skills = () => 
 {
@@ -50,6 +51,10 @@ const Skills = () =>
                     <div className="skills-cols">
                         <BiLogoPostgresql className="skills-icons text-blue"/>
                         <p>PostgreSQL</p>
+                    </div>
+                    <div className="skills-cols">
+                        <DiMongodb className="skills-icons text-green"/>
+                        <p>MongoDB</p>
                     </div>
                     <div className="skills-cols">
                         <FaGitAlt className="skills-icons text-git"/>
