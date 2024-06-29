@@ -1,8 +1,5 @@
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
-import Projects from "./Projects"
-import Skills from "./Skills"
-import Contacts from "./Contacts"
 
 import Logo from "../assets/Images/Logo.png"
 
@@ -37,10 +34,9 @@ const About = () =>
                     <button className="button font-bold mb-2 py-2 px-4 rounded md:mb-8" onClick={openPdfInNewWindow}>View my resume</button>
                 </div>
             </div>
-            <Projects/>
-            <Skills/>
-            <Contacts/>
-            <Footer/>
+            <div className="md:fixed md:w-full md:bottom-0">
+                <Footer/>
+            </div> 
         </>
     )
 };

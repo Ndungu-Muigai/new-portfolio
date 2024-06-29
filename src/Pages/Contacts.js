@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 const Contacts = () => 
 {
@@ -20,7 +22,8 @@ const Contacts = () =>
 
     return (
         <>
-            <div className="flex items-center justify-center" id='contacts'>
+            <Navbar/>
+            <div className="flex items-center justify-center mt-14">
                 <div className="p-8 rounded-lg shadow-lg w-full max-w-md">
                     <h1 className="text-2xl font-bold mb-6 text-center">Contact Me</h1>
                     <form onSubmit={handleSubmit}>
@@ -46,6 +49,9 @@ const Contacts = () =>
                     </form>
                 </div>
             </div>
+            <div className="md:fixed md:w-full md:bottom-0">
+                <Footer/>
+            </div> 
         </>
     )
 }

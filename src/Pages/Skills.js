@@ -6,12 +6,15 @@ import { BiLogoPostgresql } from "react-icons/bi"
 import { DiMongodb } from "react-icons/di";
 
 import FlaskIcon from "../assets/Images/Flask.png"
+import Footer from "../Components/Footer"
+import Navbar from "../Components/Navbar"
 
 const Skills = () => 
 {
     return ( 
-        <div id="skills">
-            <h1>Skills</h1>
+        <>
+            <Navbar/>
+            <h1 className="mt-20">Skills</h1>
             <div className="flex justify-center items-center mt-2 mx-10">
                 <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-14">
                     <div className="skills-cols">
@@ -76,7 +79,10 @@ const Skills = () =>
                     </div>
                 </div>
             </div>
-        </div>
+            <div className="md:fixed md:w-full md:bottom-0">
+                <Footer/>
+            </div> 
+        </>
     )
 }
  
