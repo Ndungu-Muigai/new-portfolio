@@ -11,7 +11,7 @@ module.exports = {
         git: "#f14e32",
         python: '#3776AB',
         screens: {
-          'xs': '320px', // Custom breakpoint for 320px screens
+          'xs': '320px',
           'sm': '640px',
           'md': '768px',
           'lg': '1024px',
