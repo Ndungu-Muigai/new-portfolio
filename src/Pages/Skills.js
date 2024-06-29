@@ -45,6 +45,10 @@ const Skills = () =>
                         <p>PHP</p>
                     </div>
                     <div className="skills-cols">
+                        <img width="50" height="50" src="https://img.icons8.com/ios/50/flask.png" alt="Flask" className="skills-icon"/>
+                        <p>Flask</p>
+                    </div>
+                    <div className="skills-cols">
                         <SiMysql className="skills-icons text-blue"/>
                         <p>MySQL</p>
                     </div>
