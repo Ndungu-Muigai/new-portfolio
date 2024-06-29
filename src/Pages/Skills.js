@@ -5,8 +5,7 @@ import { SiMysql } from "react-icons/si"
 import { BiLogoPostgresql } from "react-icons/bi"
 import { DiMongodb } from "react-icons/di";
 
-const Skills = () => 
-{
+const Skills = () => {
     return ( 
         <div id="skills">
             <h1>Skills</h1>
@@ -45,7 +44,7 @@ const Skills = () =>
                         <p>PHP</p>
                     </div>
                     <div className="skills-cols">
-                        <img width="50" height="50" src="https://img.icons8.com/ios/50/flask.png" alt="Flask" className="skills-icon"/>
+                        <img src="https://img.icons8.com/ios/50/flask.png" alt="Flask" className="skills-icon"/>
                         <p>Flask</p>
                     </div>
                     <div className="skills-cols">
@@ -75,7 +74,7 @@ const Skills = () =>
                 </div>
             </div>
         </div>
-    )
-}
- 
-export default Skills
+    );
+};
+
+export default Skills;
