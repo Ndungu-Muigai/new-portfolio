@@ -5,7 +5,7 @@ import { SiMysql } from "react-icons/si"
 import { BiLogoPostgresql } from "react-icons/bi"
 import { DiMongodb } from "react-icons/di";
 
-import FlaskIcon from "https://img.icons8.com/ios/50/flask.png"
+import FlaskIcon from "../assets/Images/Flask.png"
 
 const Skills = () => 
 {
@@ -47,7 +47,7 @@ const Skills = () =>
                         <p>PHP</p>
                     </div>
                     <div className="skills-cols">
-                        <img width="50" height="50" src={FlaskIcon} alt="Flask" className="skills-icon"/>
+                        <img width="50" height="50" src={FlaskIcon} alt="Flask" className="skills-icon bg-white"/>
                         <p>Flask</p>
                     </div>
                     <div className="skills-cols">
