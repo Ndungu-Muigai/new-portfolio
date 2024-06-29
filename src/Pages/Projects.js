@@ -10,30 +10,32 @@ const Projects = () =>
             let {id, icon, title, description, demo_link, source_code}=project
 
             return(
-                <div key={id} className="w-64 max-w-xs sm:w-80 sm:max-w-sm rounded overflow-hidden shadow-lg m-4 transform hover:scale-95 transition-transform duration-300 border-2 p-2">
+                <div key={id} className="border-2 p-2 m-2">
                     <i className={`w-full fa-icons ${icon}`}></i>
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{title}</div>
                         <p className="text-base">{description}</p>
                     </div>
-                    <div className="px-6 py-4 flex justify-between">
-                        <Link to={demo_link} target="_blank" className="button font-bold py-2 px-4 rounded mr-2">Live Demo</Link>
-                        <Link to={source_code} target="_blank" className="button font-bold py-2 px-4 rounded">Source Code</Link>
+                    <div className="flex flex-col md:flex-row md:justify-between md:gap-3 mt-2">
+                        <Link to={demo_link} target="_blank" className="button font-bold py-2 px-4 rounded">Live Demo</Link>
+                        <Link to={source_code} target="_blank" className="button font-bold py-2 px-4 mt-2 md:mt-0 rounded">Source Code</Link>
                     </div>
-                </div> 
+                </div>  
             )
         }
     )
     return (
         <>
             <Navbar/>
-            <div className="p-4 mt-14" id="projects">
+            <div className="p-4 mt-14">
                 <h1 className="text-3xl font-bold mb-2">Projects</h1>
-                <div className="flex flex-wrap justify-center">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 m-2">
                     {projectsMap}
                 </div>
             </div>
-            <Footer/>
+            <div className="md:fixed md:w-full md:bottom-0">
+                <Footer/>
+            </div> 
         </>
     )
 }
