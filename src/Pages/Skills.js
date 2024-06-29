@@ -47,7 +47,7 @@ const Skills = () =>
                         <p>PHP</p>
                     </div>
                     <div className="skills-cols">
-                        <img width="50" height="50" src={FlaskIcon} alt="Flask" className="skills-icon bg-white"/>
+                        <img width="50" height="50" src={FlaskIcon} alt="Flask" className="skills-icons bg-white"/>
                         <p>Flask</p>
                     </div>
                     <div className="skills-cols">
