@@ -79,9 +79,9 @@ const Contacts = () =>
                     </form>
                 </div>
             </div>
-            <div className="md:fixed md:w-full md:bottom-0">
+            <div className="2xl:fixed 2xl:w-full 2xl:bottom-0">
                 <Footer/>
-            </div> 
+            </div>
         </>
     )
 }

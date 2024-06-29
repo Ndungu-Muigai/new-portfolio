@@ -15,7 +15,7 @@ const Skills = () =>
         <>
             <Navbar/>
             <h1 className="mt-20">Skills</h1>
-            <div className="flex justify-center items-center mt-2 mx-10">
+            <div className="flex justify-center items-center my-2 mx-10">
                 <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-14">
                     <div className="skills-cols">
                         <FaHtml5 className="skills-icons text-html"/>
@@ -79,9 +79,9 @@ const Skills = () =>
                     </div>
                 </div>
             </div>
-            <div className="md:fixed md:w-full md:bottom-0">
+            <div className="2xl:fixed 2xl:w-full 2xl:bottom-0">
                 <Footer/>
-            </div> 
+            </div>
         </>
     )
 }

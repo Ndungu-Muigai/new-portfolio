@@ -34,9 +34,9 @@ const About = () =>
                     <button className="button font-bold mb-2 py-2 px-4 rounded md:mb-8" onClick={openPdfInNewWindow}>View my resume</button>
                 </div>
             </div>
-            <div className="md:fixed md:w-full md:bottom-0">
+            <div className="2xl:fixed 2xl:w-full 2xl:bottom-0">
                 <Footer/>
-            </div> 
+            </div>
         </>
     )
 };
