@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify'
+
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import emailjs from "@emailjs/browser"
 
 const Contacts = () => 
 {
@@ -17,7 +20,34 @@ const Contacts = () =>
     {
         e.preventDefault();
         // Handle form submission logic here, e.g., send the form data to an API
-        console.log('Form submitted:', formData);
+        console.log('Form submitted:', formData)
+
+        emailjs.send("service_ql6jaye","template_pzht7yq",
+            {
+            subject: "Test email",
+            message: "This is a test email",
+            user_name: "Lourdes Wairimu",
+            user_email: "lourdeswairimu@gmail.com",
+            },
+            {
+                publicKey: "5bJNl1qgokuds1Qql"
+            })
+        .then(response => 
+            {
+                response.status===200
+                ?
+                    toast.success("Email sent successfully",
+                        {
+                            onClose: ()=> setFormData({name: '',
+                                email: '',
+                                subject: "",
+                                message: ''})
+                        }
+                    )
+                :
+                    toast.error("Email not sent. Please try again later")
+            }
+        )
     }
 
     return (
