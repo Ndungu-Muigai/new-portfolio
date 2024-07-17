@@ -20,7 +20,7 @@ const Contacts = () =>
     {
         e.preventDefault();
     
-        fetch("https://flask-email-api.vercel.app//send-email",
+        fetch("https://flask-email-api.vercel.app/send-email",
         {
             method: "POST",
             headers: {
