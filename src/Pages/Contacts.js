@@ -3,7 +3,6 @@ import { toast } from 'react-toastify'
 
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import emailjs from "@emailjs/browser"
 
 const Contacts = () => 
 {
@@ -11,7 +10,8 @@ const Contacts = () =>
         name: '',
         email: '',
         subject: "",
-        message: ''
+        message: '',
+        toEmail: "ndungu.muigai01@gmail.com"
     })
 
     const handleChange = e => setFormData({...formData,[e.target.id]: e.target.value})
@@ -19,33 +19,34 @@ const Contacts = () =>
     const handleSubmit = e => 
     {
         e.preventDefault();
-        // Handle form submission logic here, e.g., send the form data to an API
-        console.log('Form submitted:', formData)
-
-        emailjs.send("service_ql6jaye","template_pzht7yq",
-            {
-            subject: "Test email",
-            message: "This is a test email",
-            user_name: "Lourdes Wairimu",
-            user_email: "lourdeswairimu@gmail.com",
+    
+        fetch("http://127.0.0.1:5555/send-email",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
             },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(message => 
             {
-                publicKey: "5bJNl1qgokuds1Qql"
-            })
-        .then(response => 
-            {
-                response.status===200
+                message.success
                 ?
-                    toast.success("Email sent successfully",
+                    toast.success(message.success,
                         {
-                            onClose: ()=> setFormData({name: '',
-                                email: '',
-                                subject: "",
-                                message: ''})
+                            onclose: ()=> setFormData(
+                                {
+                                    name: '',
+                                    email: '',
+                                    subject: "",
+                                    message: '',
+                                    toEmail: "ndungu.muigai01@gmail.com"
+                                })
                         }
                     )
                 :
-                    toast.error("Email not sent. Please try again later")
+                    toast.error(message.error)
             }
         )
     }
