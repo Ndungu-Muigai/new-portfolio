@@ -5,10 +5,10 @@ import Logo from "../assets/Images/Logo.png"
 
 const About = () =>
 {
-    const openPdfInNewWindow = () => 
-    {
-        window.open(require("../assets/CV/Curriculum Vitae.pdf"));
-    }
+    // const openPdfInNewWindow = () => 
+    // {
+    //     window.open(require("../assets/CV/Curriculum Vitae.pdf"));
+    // }
 
     return (
         <>
