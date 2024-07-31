@@ -31,7 +31,7 @@ const About = () =>
                     <p className="text-white text-center md:text-left mb-8 max-w-lg">
                         Apart from coding, I love swimming and playing video games in my spare time.
                     </p>
-                    <button className="button font-bold mb-2 py-2 px-4 rounded md:mb-8" onClick={openPdfInNewWindow}>View my resume</button>
+                    {/* <button className="button font-bold mb-2 py-2 px-4 rounded md:mb-8" onClick={openPdfInNewWindow}>View my resume</button> */}
                 </div>
             </div>
             <div className="2xl:fixed 2xl:w-full 2xl:bottom-0">
