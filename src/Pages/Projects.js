@@ -5,16 +5,17 @@ import { Link } from "react-router-dom"
 
 const Projects = () => 
 {
-    const projectsMap=projects.map(project =>
+    const newProjects=[...projects].reverse()
+    const projectsMap=newProjects.map(project =>
         {
             let {id, icon, title, description, demo_link, source_code}=project
 
             return(
-                <div key={id} className="border-2 p-2 m-2">
+                <div key={id} className="border-2 p-2 m-2 flex flex-col">
                     <i className={`w-full fa-icons ${icon}`}></i>
-                    <div className="px-6 py-4">
+                    <div className="px-3 py-4 flex-grow">
                         <div className="font-bold text-xl mb-2">{title}</div>
-                        <p className="text-base">{description}</p>
+                        <p className="text-base min-h-[70px]">{description}</p>
                     </div>
                     <div className="flex flex-col md:flex-row md:justify-between md:gap-3 mt-2">
                         <Link to={demo_link} target="_blank" className="button font-bold py-2 px-4 rounded">Live Demo</Link>

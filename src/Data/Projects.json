@@ -30,5 +30,29 @@
         "description": "Heads & tails game using HTML, CSS and JavaScript",
         "demo_link": "https://ndungu-muigai.github.io/Heads-Tails-Game/",
         "source_code": "https://github.com/ndungu-muigai/Heads-Tails-Game"
+    },
+    {
+        "id": 5,
+        "icon": "fa fa-shopping-cart",
+        "title": "Liteflux Enterprises",
+        "description": "An online e-commerce webiste built using React, Bootstrap, Flask and PostgreSQL",
+        "demo_link": "https://liteflux-shop.vercel.app/",
+        "source_code": "https://github.com/Ndungu-Muigai/liteflux-shop"
+    },
+    {
+        "id": 6,
+        "icon": "fa-solid fa-file-signature",
+        "title": "Leave Management System",
+        "description": "A leave management system built using React, Bootstrap, Flask, PostgreSQL, AWS and Redis",
+        "demo_link": "https://lms.mobikey.co.ke/",
+        "source_code": "https://github.com/Ndungu-Muigai/lms-frontend"
+    },
+    {
+        "id": 7,
+        "icon": "fa fa-home",
+        "title": "Rent Hive Rental Management System",
+        "description": "A rental management system built using React, Bootstrap, Flask, PostgreSQL, AWS and Redis",
+        "demo_link": "https://rent-hive.vercel.app/",
+        "source_code": "https://github.com/LourdesN/rent-hive"
     }
 ]
