@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "icon": "fa-solid fa-file-signature",
+        "icon": "fa fa-calendar",
         "title": "Leave Management System",
         "description": "A leave management system built using React, Bootstrap, Flask, PostgreSQL, AWS and Redis",
         "demo_link": "https://lms.mobikey.co.ke/",
