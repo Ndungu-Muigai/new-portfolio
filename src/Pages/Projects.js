@@ -28,7 +28,7 @@ const Projects = () =>
     return (
         <>
             <Navbar/>
-            <div className="p-4 mt-14">
+            <div className="p-4 mt-20">
                 <h1 className="text-3xl font-bold mb-2">Projects</h1>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 m-2">
                     {projectsMap}
