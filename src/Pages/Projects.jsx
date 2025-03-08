@@ -16,7 +16,7 @@ const Projects = () =>
                     const { id, icon, title, description, demo_link, tools } = project;
 
                     return (
-                    <div key={id} className="relative group border border-slate-700 rounded-lg overflow-hidden p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-teal-400">
+                    <Link key={id} to={demo_link} className="relative group border border-slate-700 rounded-lg overflow-hidden p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-teal-400">
                         {/* Background hover effect */}
                         <div className="absolute inset-0 bg-teal-400 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
 
@@ -26,13 +26,9 @@ const Projects = () =>
 
                             {/* Project Details */}
                             <div className="flex-1">
-                                <div className="flex justify-between md:hidden">
-                                    <h2 className="text-lg font-bold text-slate-200">{title}</h2>
-                                    <Link  to={demo_link} target="_blank" rel="noopener noreferrer" className="text-teal-400 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" title="View Demo"><FiArrowUpRight /></Link>
-                                </div>
-                                <h2 className="hidden md:flex text-lg font-bold items-center gap-3">
+                                <h2 className="flex text-lg font-bold items-center gap-3">
                                     {title}
-                                    <Link  to={demo_link} target="_blank" rel="noopener noreferrer" className="text-teal-400 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" title="View Demo"><FiArrowUpRight /></Link>
+                                    <p className="text-teal-400 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" title="View Demo"><FiArrowUpRight /></p>
                                 </h2>
                                 <p className="text-base text-slate-300 leading-relaxed transition-opacity duration-300 group-hover:opacity-80">{description}</p>
 
@@ -49,7 +45,7 @@ const Projects = () =>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                     );
                 })
             }
