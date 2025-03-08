@@ -6,10 +6,10 @@ function App() {
   return (
     <div className='dark-navy min-h-screen text-slate-400'>
       <div className='lg:flex lg:justify-between lg:gap-4'>
-        <header className="p-6 md:p-8 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-16">
+        <header className="p-4 md:p-8 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-16 space-y-4">
           <Intro/>
         </header>
-        <div className='pt-10 lg:w-[52%] lg:py-16'>
+        <div className='lg:w-[52%] p-4 md:p-8 lg:py-16'>
           This is rhe right hand side section
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis impedit tempore corporis doloremque, corrupti qui ipsa ea itaque voluptas sunt pariatur iure voluptates vitae quaerat, laborum iusto ratione officia.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate error minus neque inventore commodi. Reprehenderit cumque, laudantium magni ad eum iste iusto sapiente explicabo vitae, laboriosam soluta, odio voluptates?

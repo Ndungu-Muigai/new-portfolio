@@ -42,6 +42,14 @@ const Intro = () =>
                 <FaEnvelope />
             </Link>
         </div>
+
+        {/* Nav Links for smaller devices */}
+        <nav className="lg:hidden flex flex-wrap flex-row gap-6 text-sm sm:text-base font-medium">
+            <Link to="/#about" className="hover:text-slate-200 hover:underline transition-colors">About</Link>
+            <Link to="/#experience" className="hover:text-slate-200 hover:underline transition-colors">Experience</Link>
+            <Link to="/#skills" className="hover:text-slate-200 hover:underline transition-colors">Skills</Link>
+            <Link to="/#projects" className="hover:text-slate-200 hover:underline transition-colors">Projects</Link>
+        </nav>
     </>
   )
 }
