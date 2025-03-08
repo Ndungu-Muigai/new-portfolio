@@ -26,7 +26,11 @@ const Projects = () =>
 
                             {/* Project Details */}
                             <div className="flex-1">
-                                <h2 className="text-lg font-bold flex items-center gap-3">
+                                <div className="flex justify-between md:hidden">
+                                    <h2 className="text-lg font-bold text-slate-200">{title}</h2>
+                                    <Link  to={demo_link} target="_blank" rel="noopener noreferrer" className="text-teal-400 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" title="View Demo"><FiArrowUpRight /></Link>
+                                </div>
+                                <h2 className="hidden md:flex text-lg font-bold items-center gap-3">
                                     {title}
                                     <Link  to={demo_link} target="_blank" rel="noopener noreferrer" className="text-teal-400 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" title="View Demo"><FiArrowUpRight /></Link>
                                 </h2>
