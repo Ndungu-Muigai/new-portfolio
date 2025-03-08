@@ -1,6 +1,7 @@
 import { FaWhatsapp, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa"
 import { FaXTwitter, FaPhone, FaEnvelope } from "react-icons/fa6"
 import { Link } from "react-router"
+import { NavHashLink } from "react-router-hash-link";
 
 const Intro = () => 
 {
@@ -13,10 +14,10 @@ const Intro = () =>
         <p className="max-w-md text-slate-400 leading-relaxed">I excel at transforming complex concepts into user-friendly applications.</p>
 
         <nav className="hidden lg:flex lg:flex-wrap lg:flex-col gap-4 text-sm sm:text-base font-medium">
-            <Link to="/#about" className="hover:text-slate-200 hover:underline transition-colors">About</Link>
-            <Link to="/#experience" className="hover:text-slate-200 hover:underline transition-colors">Experience</Link>
-            <Link to="/#skills" className="hover:text-slate-200 hover:underline transition-colors">Skills</Link>
-            <Link to="/#projects" className="hover:text-slate-200 hover:underline transition-colors">Projects</Link>
+            <NavHashLink smooth to="/#about" className="hover:text-slate-200 hover:underline transition-colors">About</NavHashLink>
+            <NavHashLink smooth to="/#experience" className="hover:text-slate-200 hover:underline transition-colors">Experience</NavHashLink>
+            <NavHashLink smooth to="/#skills" className="hover:text-slate-200 hover:underline transition-colors">Skills</NavHashLink>
+            <NavHashLink smooth to="/#projects" className="hover:text-slate-200 hover:underline transition-colors">Projects</NavHashLink>
         </nav>
 
         <div className="flex flex-wrap gap-3">
@@ -45,10 +46,10 @@ const Intro = () =>
 
         {/* Nav Links for smaller devices */}
         <nav className="lg:hidden flex flex-wrap flex-row gap-6 text-sm sm:text-base font-medium">
-            <Link to="/#about" className="hover:text-slate-200 hover:underline transition-colors">About</Link>
-            <Link to="/#experience" className="hover:text-slate-200 hover:underline transition-colors">Experience</Link>
-            <Link to="/#skills" className="hover:text-slate-200 hover:underline transition-colors">Skills</Link>
-            <Link to="/#projects" className="hover:text-slate-200 hover:underline transition-colors">Projects</Link>
+            <NavHashLink smooth to="/#about" className="hover:text-slate-200 hover:underline transition-colors">About</NavHashLink>
+            <NavHashLink smooth to="/#experience" className="hover:text-slate-200 hover:underline transition-colors">Experience</NavHashLink>
+            <NavHashLink smooth to="/#skills" className="hover:text-slate-200 hover:underline transition-colors">Skills</NavHashLink>
+            <NavHashLink smooth to="/#projects" className="hover:text-slate-200 hover:underline transition-colors">Projects</NavHashLink>
         </nav>
     </>
   )
