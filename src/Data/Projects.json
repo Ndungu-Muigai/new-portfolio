@@ -49,7 +49,7 @@
         "icon": "fa fa-calendar",
         "title": "Leave Management System",
         "description": "A robust leave management system designed to streamline leave applications, approvals, and tracking for organizations.",
-        "demo_link": "https://lms.mobikey.co.ke/",
+        "demo_link": "https://mobikey-lms.vercel.app/",
         "source_code": "https://github.com/Ndungu-Muigai/lms-frontend",
         "tools": ["React", "Bootstrap", "Flask", "PostgreSQL", "AWS", "Redis"]
     },
