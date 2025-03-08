@@ -7,13 +7,12 @@ const Intro = () =>
 {
   return (
     <>
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-slate-200">
-            <Link to="/" className="transition-colors">Muigai Samuel Ndung'u</Link>
-        </h1>
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-slate-200">Muigai Samuel Ndung'u</h1>
         <h2 className="text-lg font-medium tracking-tight sm:text-xl text-teal-300">Full Stack Software Developer</h2>
         <p className="max-w-md text-slate-400 leading-relaxed">I excel at transforming complex concepts into user-friendly applications.</p>
 
         <nav className="hidden lg:flex lg:flex-wrap lg:flex-col gap-4 text-sm sm:text-base font-medium">
+            <NavHashLink smooth to="/#intro" className="hover:text-slate-200 hover:underline transition-colors">Home</NavHashLink>
             <NavHashLink smooth to="/#about" className="hover:text-slate-200 hover:underline transition-colors">About</NavHashLink>
             <NavHashLink smooth to="/#skills" className="hover:text-slate-200 hover:underline transition-colors">Skills</NavHashLink>
             <NavHashLink smooth to="/#projects" className="hover:text-slate-200 hover:underline transition-colors">Projects</NavHashLink>
