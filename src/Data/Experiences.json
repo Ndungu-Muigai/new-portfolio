@@ -1,0 +1,48 @@
+{
+    "education" : 
+    [
+        {
+            "id" : 1,
+            "school" : "Strathmore University",
+            "course" : "Bachelor of Science in Telecommunication",
+            "start_date" : "2019-08-07",
+            "completion_date" : "2023-07-07"
+        },
+        {
+            "id" : 2,
+            "school" : "Moringa School",
+            "course" : "Full Stack Software Engineering",
+            "start_date" : "2023-09-18",
+            "completion_date" : "2024-03-18"
+        }
+            
+    ],
+    "work" : 
+    [
+        {
+            "id" : 1,
+            "company" : "Freight In Time Limited",
+            "position" : "IT Intern",
+            "start_date" : "2022-01-01",
+            "end_date" : "2022-04-31",
+            "achievements" :[
+                "IT support and system Administration",
+                "Troubleshooting network problems",
+                "Software development using PHP and JavaScript",
+                "Operating the SCM Profit system used in inventory management."
+            ]
+        },
+        {
+            "id" : 2,
+            "company" : "Mobikey Truck and Bus Limited",
+            "position" : "IT Assistant",
+            "start_date" : "2022-12-14",
+            "end_date" : "",
+            "achievements" :[
+                "Development and implementation of a leave management system",
+                "IT support and system Administration",
+                "Network management"
+            ]
+        }
+    ]
+}

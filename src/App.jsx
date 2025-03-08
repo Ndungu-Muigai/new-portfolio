@@ -1,11 +1,12 @@
 import './App.css'
 import "./assets/CSS/Skills.css"
 
-import About from './Pages/About'
-import Footer from './Pages/Footer'
 import Intro from './Pages/Intro'
-import Projects from './Pages/Projects'
+import About from './Pages/About'
 import Skills from './Pages/Skills'
+import Projects from './Pages/Projects'
+import Experiences from './Pages/Experience'
+import Footer from './Pages/Footer'
 
 function App() 
 {
@@ -25,6 +26,9 @@ function App()
           </div>
           <div id="projects">
             <Projects/>
+          </div>
+          <div id="experience">
+            <Experiences/>
           </div>
           <Footer/>
         </div>

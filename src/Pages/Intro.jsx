@@ -16,8 +16,8 @@ const Intro = () =>
         <nav className="hidden lg:flex lg:flex-wrap lg:flex-col gap-4 text-sm sm:text-base font-medium">
             <NavHashLink smooth to="/#about" className="hover:text-slate-200 hover:underline transition-colors">About</NavHashLink>
             <NavHashLink smooth to="/#skills" className="hover:text-slate-200 hover:underline transition-colors">Skills</NavHashLink>
-            <NavHashLink smooth to="/#experience" className="hover:text-slate-200 hover:underline transition-colors">Experience</NavHashLink>
             <NavHashLink smooth to="/#projects" className="hover:text-slate-200 hover:underline transition-colors">Projects</NavHashLink>
+            <NavHashLink smooth to="/#experience" className="hover:text-slate-200 hover:underline transition-colors">Experience</NavHashLink>
         </nav>
 
         <div className="flex flex-wrap gap-3">
@@ -47,9 +47,9 @@ const Intro = () =>
         {/* Nav Links for smaller devices */}
         <nav className="lg:hidden flex flex-wrap flex-row gap-6 text-sm sm:text-base font-medium">
             <NavHashLink smooth to="/#about" className="hover:text-slate-200 hover:underline transition-colors">About</NavHashLink>
-            <NavHashLink smooth to="/#skills" className="hover:text-slate-200 hover:underline transition-colors">Skills</NavHashLink>
-            <NavHashLink smooth to="/#experience" className="hover:text-slate-200 hover:underline transition-colors">Experience</NavHashLink>            
+            <NavHashLink smooth to="/#skills" className="hover:text-slate-200 hover:underline transition-colors">Skills</NavHashLink>           
             <NavHashLink smooth to="/#projects" className="hover:text-slate-200 hover:underline transition-colors">Projects</NavHashLink>
+            <NavHashLink smooth to="/#experience" className="hover:text-slate-200 hover:underline transition-colors">Experience</NavHashLink> 
         </nav>
     </>
   )
