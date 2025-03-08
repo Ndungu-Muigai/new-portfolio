@@ -2,6 +2,7 @@ import './App.css'
 import "./assets/CSS/Skills.css"
 
 import About from './Pages/About'
+import Footer from './Pages/Footer'
 import Intro from './Pages/Intro'
 import Projects from './Pages/Projects'
 import Skills from './Pages/Skills'
@@ -25,6 +26,7 @@ function App()
           <div id="projects">
             <Projects/>
           </div>
+          <Footer/>
         </div>
       </div>
     </div>
