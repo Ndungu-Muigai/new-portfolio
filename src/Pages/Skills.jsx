@@ -9,7 +9,7 @@ import FlaskIcon from "../assets/Images/Flask.png"
 const Skills = () => 
 {
     return ( 
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10 mt-10">
             <div className="flex flex-col justify-center items-center">
                     <FaHtml5 className="text-4xl m-5 md:text-5xl text-html"/>
                     <p>HTML5</p>

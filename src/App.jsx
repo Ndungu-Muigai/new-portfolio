@@ -3,6 +3,7 @@ import "./assets/CSS/Skills.css"
 
 import About from './Pages/About'
 import Intro from './Pages/Intro'
+import Projects from './Pages/Projects'
 import Skills from './Pages/Skills'
 
 function App() 
@@ -20,6 +21,9 @@ function App()
           </div>
           <div id='skills'>
             <Skills/>
+          </div>
+          <div id="projects">
+            <Projects/>
           </div>
         </div>
       </div>

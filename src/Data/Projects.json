@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "icon": "fa fa-gamepad",
+        "title": "Color Game",
+        "description": "A fun and interactive color-matching game where players test their ability to identify colors within a given time.",
+        "demo_link": "https://ndungu-muigai.github.io/Color-Game/",
+        "source_code": "https://github.com/ndungu-muigai/Color-Game",
+        "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "id": 2,
+        "icon": "fa fa-book",
+        "title": "Dictionary Application",
+        "description": "A dictionary app that allows users to search for word definitions, synonyms, and pronunciations using a public API.",
+        "demo_link": "https://ndungu-muigai.github.io/dictionary-app-project/",
+        "source_code": "https://github.com/ndungu-muigai/dictionary-app-project.git",
+        "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "id": 3,
+        "icon": "fa fa-hourglass-start",
+        "title": "Value Counter",
+        "description": "A lightweight counter application that enables users to increment, decrement, and reset values dynamically.",
+        "demo_link": "https://ndungu-muigai.github.io/Counter-Using-HTML-CSS-JS/",
+        "source_code": "https://github.com/ndungu-muigai/Counter-Using-HTML-CSS-JS",
+        "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "id": 4,
+        "icon": "fas fa-coins",
+        "title": "Heads & Tails Game",
+        "description": "An engaging heads or tails coin flip game with a clean UI and randomized outcomes.",
+        "demo_link": "https://ndungu-muigai.github.io/Heads-Tails-Game/",
+        "source_code": "https://github.com/ndungu-muigai/Heads-Tails-Game",
+        "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "id": 5,
+        "icon": "fa fa-shopping-cart",
+        "title": "Liteflux Enterprises",
+        "description": "A fully functional e-commerce platform for selling electrical and solar products, featuring product browsing, cart management, and order processing.",
+        "demo_link": "https://liteflux-shop.vercel.app/",
+        "source_code": "https://github.com/Ndungu-Muigai/liteflux-shop",
+        "tools": ["React", "Bootstrap", "Flask", "PostgreSQL"]
+    },
+    {
+        "id": 6,
+        "icon": "fa fa-calendar",
+        "title": "Leave Management System",
+        "description": "A robust leave management system designed to streamline leave applications, approvals, and tracking for organizations.",
+        "demo_link": "https://lms.mobikey.co.ke/",
+        "source_code": "https://github.com/Ndungu-Muigai/lms-frontend",
+        "tools": ["React", "Bootstrap", "Flask", "PostgreSQL", "AWS", "Redis"]
+    },
+    {
+        "id": 7,
+        "icon": "fa fa-home",
+        "title": "Rent Hive Rental Management System",
+        "description": "A comprehensive rental management system that simplifies property listings, tenant requests, and rent payments.",
+        "demo_link": "https://rent-hive.vercel.app/",
+        "source_code": "https://github.com/LourdesN/rent-hive",
+        "tools": ["React", "Bootstrap", "Flask", "PostgreSQL", "AWS", "Redis"]
+    }
+]
