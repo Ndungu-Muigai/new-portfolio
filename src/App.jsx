@@ -1,6 +1,9 @@
 import './App.css'
+import "./assets/CSS/Skills.css"
+
 import About from './Pages/About'
 import Intro from './Pages/Intro'
+import Skills from './Pages/Skills'
 
 function App() 
 {
@@ -14,6 +17,9 @@ function App()
         <div className='lg:w-[52%] p-4 md:p-8 lg:py-16'>
           <div id='about'>
             <About/>
+          </div>
+          <div id='skills'>
+            <Skills/>
           </div>
         </div>
       </div>
