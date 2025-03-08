@@ -61,5 +61,14 @@
         "demo_link": "https://rent-hive.vercel.app/",
         "source_code": "https://github.com/LourdesN/rent-hive",
         "tools": ["React", "Bootstrap", "Flask", "PostgreSQL", "AWS", "Redis"]
+    },
+    {
+        "id": 8,
+        "icon": "fa fa-question",
+        "title": "Quizfusion Quiz App",
+        "description": "An interactive quiz application that allows users to test their knowledge on various topics with instant feedback and dynamic scoring.",
+        "demo_link": "https://quizfusion.vercel.app/",
+        "source_code": "https://github.com/Ndungu-Muigai/quiz-app.git",
+        "tools": ["React", "Tailwind"]
     }
 ]
