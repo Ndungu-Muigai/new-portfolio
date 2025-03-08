@@ -16,7 +16,7 @@ const Projects = () =>
                     const { id, icon, title, description, demo_link, tools } = project;
 
                     return (
-                    <Link key={id} to={demo_link} className="relative group border border-slate-700 rounded-lg overflow-hidden p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-teal-400">
+                    <Link key={id} to={demo_link} target="_blank" rel="noopener noreferrer"  className="relative group border border-slate-700 rounded-lg overflow-hidden p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-teal-400">
                         {/* Background hover effect */}
                         <div className="absolute inset-0 bg-teal-400 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
 
