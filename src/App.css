@@ -25,5 +25,5 @@
 }
 .icon
 {
-  @apply text-xl;
+  font-size: 35px;
 }
