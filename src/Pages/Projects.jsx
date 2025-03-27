@@ -2,6 +2,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router"; 
 
 import projectsData from "../Data/Projects.json";
+import { MdArrowOutward } from "react-icons/md";
 
 const Projects = () => 
 {
@@ -10,6 +11,7 @@ const Projects = () =>
 
     return (
         <div className="flex flex-col gap-4 mt-12">
+            <h2 className="text-2xl font-bold text-teal-400">Projects</h2>
             {
                 latestProjects.map((project) => 
                 {
@@ -49,6 +51,7 @@ const Projects = () =>
                     );
                 })
             }
+            <Link to="/projects" className="text-teal-400 flex items-center gap-1">View project archive <MdArrowOutward/></Link>
         </div>
     );
 };

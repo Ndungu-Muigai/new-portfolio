@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 
 import experiencesData from "../Data/Experiences.json";
+import CV from "../assets/Files/CV.pdf"
+import { MdArrowOutward } from "react-icons/md";
 
 const Experiences = () => 
 {
@@ -13,6 +15,11 @@ const Experiences = () =>
         const options = { year: "numeric", month: "short" };
         return new Date(dateString).toLocaleDateString("en-US", options);
     };
+
+    const openPDF = () =>
+    {
+        window.open(CV, "_blank", "noopener,noreferrer")
+    }
 
     return (
         <div className="flex flex-col gap-6 mt-12">
@@ -53,7 +60,7 @@ const Experiences = () =>
                         ))
                     }
                 </div>
-            <Link className="btn bg-teal-400">View full resume</Link>
+            <Link onClick={openPDF} className="text-teal-400 flex items-center gap-1">View full resume <MdArrowOutward/></Link>
         </div>
     );
 };
