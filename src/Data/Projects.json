@@ -70,5 +70,15 @@
         "demo_link": "https://quizfusion.vercel.app/",
         "source_code": "https://github.com/Ndungu-Muigai/quiz-app.git",
         "tools": ["React", "Tailwind"]
+    },
+    {
+        "id": 9,
+        "icon": "fa fa-calendar",
+        "title": "Event Management System",
+        "description": "A full-stack platform for creating, managing, and attending events. Includes authentication, ticketing, event creation and role-based access.",
+        "demo_link": "https://evnthub.vercel.app/",
+        "source_code": "https://github.com/Ndungu-Muigai/event-management-system",
+        "tools": ["NextJS", "Tailwind", "PostgreSQL", "Supabase", "Prisma"]
     }
+
 ]
