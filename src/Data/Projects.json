@@ -79,6 +79,14 @@
         "demo_link": "https://evnthub.vercel.app/",
         "source_code": "https://github.com/Ndungu-Muigai/event-management-system",
         "tools": ["NextJS", "Tailwind", "PostgreSQL", "Supabase", "Prisma"]
-    }
-
+    },
+    {
+        "id": 10,
+        "icon": "fa fa-plane-departure",
+        "title": "GetOut N Travel",
+        "description": "A tours and travel platform that showcases upcoming trips with a clean, responsive interface for easy exploration.",
+        "demo_link": "https://getoutntravel.vercel.app/",
+        "source_code": "https://github.com/Ndungu-Muigai/getoutntravel",
+        "tools": ["React", "Tailwind", "Vite"]
+    }  
 ]
