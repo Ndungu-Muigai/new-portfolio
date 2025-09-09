@@ -42,7 +42,7 @@ const Experiences = () =>
                 <h2 className="text-2xl font-bold text-teal-400">Work Experience</h2>
                 <div className="space-y-6">
                     {
-                        [...work].reverse().map(({ id, company, position, start_date, end_date, achievements }) => (
+                        [...work].reverse().slice(0,2).map(({ id, company, position, start_date, end_date, achievements }) => (
                             <div key={id} className="border border-slate-700 rounded-lg p-6 space-y-2">
                                 <h3 className="text-lg font-semibold text-slate-200">{company}</h3>
                                 <p className="text-sm text-teal-300">{position}</p>
