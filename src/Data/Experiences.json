@@ -43,6 +43,18 @@
                 "IT support and system Administration",
                 "Network management"
             ]
+        },
+        {
+            "id": 3,
+            "company": "Stasspeak",
+            "position": "Software Engineering Intern",
+            "start_date": "2025-04-01",
+            "end_date": "2025-07-31",
+            "achievements" :[
+                "Developed a loan management platform frontend using React.js, enabling employees to request salary advances via KCB’s LaaS APIs",
+                "Built an AI-powered tea farm management dashboard with satellite-based maps and real-time insights for farmers and managers",
+                "Designed responsive UI components for onboarding, payroll, and loan request workflows"
+            ]
         }
     ]
 }
