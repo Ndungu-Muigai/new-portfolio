@@ -67,7 +67,7 @@ const allSkills = [
 const About = () => 
 {
   return (
-    <section id="about" className="relative min-h-screen py-20 px-6 bg-[#0a192f]">
+    <section id="about" className="relative min-h-screen py-10 px-6 bg-[#0a192f]">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: false }}>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">About <span className="text-cyan-400">Me</span></h2>
@@ -81,7 +81,7 @@ const About = () =>
               I'm a passionate Full-Stack Developer
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              With over 5 years of experience in web development, I specialize in building 
+              With over 3 years of experience in web development, I specialize in building 
               modern, responsive, and user-friendly applications. My journey started with 
               curiosity for how things work on the web, and it has evolved into a career 
               where I get to create meaningful digital experiences.
