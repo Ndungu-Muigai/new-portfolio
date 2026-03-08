@@ -16,9 +16,9 @@ function App()
       <Projects />
       <Contact />
       <ScrollToTop smooth className="rounded-full" component={
-          <div className="w-10 h-10 bg-cyan-500 flex items-center justify-center text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-cyan-500 flex items-center justify-center text-white transition-all duration-300 border-2 border-white/20">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 10l7-7m0 0l7 7m-7-7v18" />
             </svg>
           </div>
         } />
@@ -27,3 +27,4 @@ function App()
 }
 
 export default App
+

@@ -36,7 +36,8 @@ const skillCategories = [
   },
 ]
 
-const SkillIcon = ({ skill }) => {
+const SkillIcon = ({ skill }) => 
+{
   const [svgContent, setSvgContent] = useState("")
 
   useEffect(() => {
@@ -47,73 +48,68 @@ const SkillIcon = ({ skill }) => {
   }, [skill.svg])
 
   return (
-    <div 
-      className="w-10 h-10 group-hover:scale-110 transition-transform duration-300"
-      style={{ color: skill.color }}
-      dangerouslySetInnerHTML={{ 
-        __html: svgContent.replace(/<svg/, '<svg fill="currentColor"') 
-      }}
+    <div className="w-8 h-8 sm:w-10 sm:h-10 group-hover:scale-110 transition-transform duration-300 shrink-0" style={{ color: skill.color }} dangerouslySetInnerHTML={{ __html: svgContent.replace(/<svg/, '<svg fill="currentColor"') }}
     />
   )
 }
 
 const allSkills = [
-  ...skillCategories[0].skills, // Frontend
-  ...skillCategories[1].skills, // Backend
-  ...skillCategories[2].skills, // Databases
-  ...skillCategories[3].skills, // Tools
+  ...skillCategories[0].skills,
+  ...skillCategories[1].skills,
+  ...skillCategories[2].skills,
+  ...skillCategories[3].skills,
 ]
 
 const About = () => 
 {
   return (
-    <section id="about" className="relative min-h-screen py-10 px-6 bg-[#0a192f]">
+    <section id="about" className="relative min-h-screen py-10 sm:py-20 px-4 sm:px-6 bg-[#0a192f]">
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: false }}>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">About <span className="text-cyan-400">Me</span></h2>
-          <div className="w-24 h-1 bg-linear-to-r from-blue-500 to-cyan-500 rounded mb-12" />
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">About <span className="text-cyan-400">Me</span></h2>
+          <div className="w-24 h-1 bg-linear-to-r from-blue-500 to-cyan-500 rounded mb-8 sm:mb-12" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Left - Bio */}
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} viewport={{ once: false }}>
-            <h3 className="text-2xl font-semibold text-white mb-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
               I'm a passionate Full-Stack Developer
             </h3>
-            <p className="text-gray-400 text-lg leading-relaxed mb-6">
+            <p className="text-gray-400 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
               With over 3 years of experience in web development, I specialize in building 
               modern, responsive, and user-friendly applications. My journey started with 
               curiosity for how things work on the web, and it has evolved into a career 
               where I get to create meaningful digital experiences.
             </p>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
+            <p className="text-gray-400 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
               I believe in writing clean, maintainable code and staying up-to-date with 
               the latest technologies. When I'm not coding, you can find me exploring 
               new frameworks, contributing to open-source projects, or sharing knowledge 
               with the developer community.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
-                <span className="text-3xl font-bold text-blue-400">{new Date().getFullYear() - 2023}+</span>
-                <p className="text-gray-400 text-sm">Years Experience</p>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3 sm:p-4">
+                <span className="text-2xl sm:text-3xl font-bold text-blue-400">{new Date().getFullYear() - 2023}+</span>
+                <p className="text-gray-400 text-xs sm:text-sm">Years Experience</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
-                <span className="text-3xl font-bold text-cyan-400">10+</span>
-                <p className="text-gray-400 text-sm">Projects Completed</p>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3 sm:p-4">
+                <span className="text-2xl sm:text-3xl font-bold text-cyan-400">10+</span>
+                <p className="text-gray-400 text-xs sm:text-sm">Projects Completed</p>
               </div>
             </div>
           </motion.div>
 
           {/* Right - Skills Icons */}
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.4 }} viewport={{ once: false }}>
-            <h3 className="text-2xl font-semibold text-white mb-6">Tech Stack</h3>
-            <div className="grid grid-cols-3 gap-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 sm:mb-6">Tech Stack</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4">
               {
                 allSkills.map((skill, index) => (
-                  <motion.div key={skill.name} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: index * 0.03 }} viewport={{ once: false }} className="flex items-center gap-3 px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-cyan-500/50 hover:bg-white/10 transition-all duration-300 group">
+                  <motion.div key={skill.name} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: index * 0.03 }} viewport={{ once: false }} className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg sm:rounded-xl hover:border-cyan-500/50 hover:bg-white/10 transition-all duration-300 group">
                     <SkillIcon skill={skill} />
-                    <span className="text-sm font-medium text-gray-400 group-hover:text-white transition-colors">{skill.name}</span>
+                    <span className="text-xs sm:text-sm font-medium text-gray-400 group-hover:text-white transition-colors whitespace-nowrap">{skill.name}</span>
                   </motion.div>
                 ))
               }
