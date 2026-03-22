@@ -7,7 +7,7 @@ const projects = [
     title: "Lizah Baby Shop",
     description: "A fully functional e-commerce platform for selling baby products, featuring product browsing, cart management, and order processing.",
     tags: ["Django", "Bootstrap", "PostgreSQL"],
-    image: "https://plus.unsplash.com/premium_photo-1664201889922-66bc3c778c1e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://media.istockphoto.com/id/2207271217/photo/optimization-of-procurement-or-purchasing-product-order-for-online-shopping-and-service.jpg?s=1024x1024&w=is&k=20&c=PYQL9vGi4asRT8h_tKZCgrD8NKQKOwL40DEKDP_1lsk=",
     live: "https://lizah-baby-shop.vercel.app/",
     github: "https://github.com/Ndungu-Muigai/lizah-baby-shop"
   },
