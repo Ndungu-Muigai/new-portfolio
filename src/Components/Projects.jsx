@@ -1,8 +1,16 @@
-import { motion } from "motion/react"
-import { title } from "motion/react-client"
+
+
 import { useState } from "react"
 
 const projects = [
+  {
+    title: "Cook Like Sushi",
+    description: "A dynamic web platform for a Nairobi-based food brand offering personalized meal plans, nutrition guidance, daily meal prep services, and in-home cooking experiences, all presented through a clean and engaging user interface.",
+    tags: ["React", "TailwindCSS", "DaisyUI"],
+    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&auto=format&fit=crop",
+    live: "https://cook-like-sushi.vercel.app/",
+    github: "https://github.com/Ndungu-Muigai/cook-like-sushi"
+  },
   {
     title: "Lizah Baby Shop",
     description: "A fully functional e-commerce platform for selling baby products, featuring product browsing, cart management, and order processing.",
