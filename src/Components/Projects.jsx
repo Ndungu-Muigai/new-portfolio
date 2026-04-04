@@ -1,11 +1,11 @@
-
+import { motion } from "motion/react"
 
 import { useState } from "react"
 
 const projects = [
   {
     title: "Cook Like Sushi",
-    description: "A dynamic web platform for a Nairobi-based food brand offering personalized meal plans, nutrition guidance, daily meal prep services, and in-home cooking experiences, all presented through a clean and engaging user interface.",
+    description: "A dynamic web platform for a Nairobi-based food brand offering personalized meal plans, nutrition guidance, daily meal prep services, and in-home cooking experiences",
     tags: ["React", "TailwindCSS", "DaisyUI"],
     image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&auto=format&fit=crop",
     live: "https://cook-like-sushi.vercel.app/",
@@ -139,7 +139,7 @@ const Projects = () => {
                   <h3 className="text-lg sm:text-xl font-semibold text-white mb-1 sm:mb-2 group-hover:text-cyan-400 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
+                  <p className="text-gray-400 text-xs sm:text-sm mb-4 sm:mb-6 leading-relaxed">
                     {project.description}
                   </p>
 
