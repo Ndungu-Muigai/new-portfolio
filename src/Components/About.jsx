@@ -23,6 +23,7 @@ const skillCategories = [
   {
     title: "Databases",
     skills: [
+      { name: "MySQL", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg", color: "#00618A" },
       { name: "MongoDB", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg", color: "#47A248" },
       { name: "PostgreSQL", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg", color: "#336791" },
     ]
