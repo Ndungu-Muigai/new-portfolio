@@ -110,7 +110,7 @@ const Hero = () =>
                         <div className="absolute -inset-6 sm:-inset-10 bg-linear-to-r from-blue-500/20 via-cyan-500/20 to-teal-500/20 blur-2xl sm:blur-3xl rounded-full" />
 
                         <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-70 md:h-75 lg:w-[320px] lg:h-95 rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 backdrop-blur-xl shadow-[0_20px_80px_rgba(59,130,246,0.35)]">
-                            <img src="/avatar.png" className="w-full h-full object-cover" alt="avatar" />
+                            <img src="https://images.unsplash.com/photo-1608306448197-e83633f1261c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full h-full" alt="avatar" />
                         </div>
                     </motion.div>
                 </div>
