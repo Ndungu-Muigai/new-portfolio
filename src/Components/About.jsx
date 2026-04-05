@@ -10,12 +10,14 @@ const skillCategories = [
       { name: "JavaScript", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg", color: "#F7DF1E" },
       { name: "TypeScript", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/typescript.svg", color: "#3178C6" },
       { name: "Tailwind", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg", color: "#06B6D4" },
+      { name: "Daisy UI", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/daisyui.svg", color: "#5A00A0" },
     ]
   },
   {
     title: "Backend",
     skills: [
       { name: "Node.js", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg", color: "#339933" },
+      { name: "Express.js", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg", color: "#339933" },
       { name: "PHP", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/php.svg", color: "#777BB4" },
       { name: "Python", svg: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg", color: "#3776AB" },
     ]
