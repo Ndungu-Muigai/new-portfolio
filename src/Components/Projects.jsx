@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Cook Like Sushi",
     description: "A dynamic web platform for a Nairobi-based food brand offering personalized meal plans, nutrition guidance, daily meal prep services, and in-home cooking experiences",
-    tags: ["React", "TailwindCSS", "DaisyUI"],
+    tags: ["React", "TailwindCSS", "Daisy UI", "Framer Motion"],
     image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&auto=format&fit=crop",
     live: "https://cook-like-sushi.vercel.app/",
     github: "https://github.com/Ndungu-Muigai/cook-like-sushi"
@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Lizah Baby Shop",
     description: "A fully functional e-commerce platform for selling baby products, featuring product browsing, cart management, and order processing.",
-    tags: ["Django", "Bootstrap", "PostgreSQL"],
+    tags: ["Django", "TailwindCSS", "PostgreSQL"],
     image: "https://media.istockphoto.com/id/2207271217/photo/optimization-of-procurement-or-purchasing-product-order-for-online-shopping-and-service.jpg?s=1024x1024&w=is&k=20&c=PYQL9vGi4asRT8h_tKZCgrD8NKQKOwL40DEKDP_1lsk=",
     live: "https://www.lizahbabyshop.com/",
     github: "https://github.com/Ndungu-Muigai/lizah-baby-shop"
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "GetOut N Travel",
     description: "A tours and travel platform that showcases upcoming trips with a clean, responsive interface for easy exploration.",
-    tags: ["React", "Tailwind", "Vite"],
+    tags: ["React", "Tailwind", "Framer Motion"],
     image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=500&fit=crop",
     live: "https://getoutntravel.vercel.app/",
     github: "https://github.com/Ndungu-Muigai/getoutntravel"
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Event Management System",
     description: "A full-stack platform for creating, managing, and attending events. Includes authentication, ticketing, event creation and role-based access.",
-    tags: ["NextJS", "Tailwind", "PostgreSQL", "Supabase", "Prisma"],
+    tags: ["NextJS", "Tailwind", "PostgreSQL",],
     image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=500&fit=crop",
     live: "https://evnthub.vercel.app/",
     github: "https://github.com/Ndungu-Muigai/event-management-system"
@@ -38,7 +38,7 @@ const projects = [
   {
     title: "Quizfusion Quiz App",
     description: "An interactive quiz application that allows users to test their knowledge on various topics with instant feedback and dynamic scoring.",
-    tags: ["React", "Tailwind"],
+    tags: ["React", "Tailwind", "Daisy UI"],
     image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=800&h=500&fit=crop",
     live: "https://quizfusion.vercel.app/",
     github: "https://github.com/Ndungu-Muigai/quiz-app.git"
