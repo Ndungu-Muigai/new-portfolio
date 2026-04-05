@@ -2,7 +2,6 @@ import { motion } from "motion/react"
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
 import { toast } from "react-toastify"
-import loading from "daisyui/components/loading"
 
 const Contact = () => 
 {
