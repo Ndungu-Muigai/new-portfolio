@@ -121,7 +121,7 @@ const Contact = () =>
           {/* Left - Contact Info */}
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} viewport={{ once: false }}>
             <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 sm:mb-6">Let's talk about everything!</h3>
-            <p className="text-gray-400 text-base sm:text-lg mb-6 sm:mb-8">Don't like forms? Send me an email. 👋</p>
+            <p className="text-gray-400 text-base sm:text-lg mb-6 sm:mb-8">Don't like forms? Send me an email.</p>
 
             <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
               {
