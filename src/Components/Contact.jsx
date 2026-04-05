@@ -2,9 +2,12 @@ import { motion } from "motion/react"
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
 import { toast } from "react-toastify"
+import loading from "daisyui/components/loading"
 
 const Contact = () => 
 {
+  //State to check if the message is being sent
+  const [isSending, setIsSending] = useState(false)
 
   const [formData, setFormData] = useState(
   {
@@ -17,8 +20,15 @@ const Contact = () =>
   const handleSubmit = e => 
   {
     e.preventDefault()
-
-    emailjs.send("service_g7mlrw8", "template_lppq4qz", formData, "YZfD8aXcQI9Qwai9L")
+    const newFormData = 
+    {
+      name: formData.name,
+      reply_to: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    }
+    setIsSending(true)
+    emailjs.send("service_g7mlrw8", "template_lppq4qz", newFormData, "YZfD8aXcQI9Qwai9L")
     .then((result) => 
     {
       console.log(result.text)
@@ -30,6 +40,7 @@ const Contact = () =>
       console.log(error.text)
       toast.error("Failed to send message. Please try again later.")
     })
+    .finally(() => setIsSending(false))
   }
 
   const handleChange = e => 
@@ -163,7 +174,18 @@ const Contact = () =>
                 <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows="4 sm:6" className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all resize-none text-sm sm:text-base" placeholder="Your message here..." />
               </div>
 
-              <motion.button type="submit" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full py-3 sm:py-4 bg-linear-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-cyan-500/40 transition-all duration-300 text-sm sm:text-base">Send Message</motion.button>
+              <motion.button type="submit" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className={`w-full py-3 sm:py-4 bg-cyan-500 text-white font-semibold rounded-xl hover:bg-cyan-600 transition-colors flex items-center justify-center gap-2 ${isSending ? "cursor-not-allowed opacity-70" : ""}`} disabled={isSending}>
+                {
+                  isSending 
+                  ? 
+                    <div className="flex items-center justify-center gap-2">
+                      <span>Sending...</span>
+                      <span className="loading loading-spinner loading-sm text-white"></span>
+                    </div>
+                  : 
+                    "Send Message"
+                }
+              </motion.button>
             </form>
           </motion.div>
         </div>
