@@ -1,5 +1,7 @@
 import { motion } from "motion/react"
 import { useState } from "react"
+import emailjs from "@emailjs/browser"
+import { toast } from "react-toastify"
 
 const Contact = () => 
 {
@@ -8,13 +10,26 @@ const Contact = () =>
   {
     name: "",
     email: "",
+    subject: "",
     message: ""
   })
 
   const handleSubmit = e => 
   {
     e.preventDefault()
-    console.log(formData)
+
+    emailjs.send("service_g7mlrw8", "template_lppq4qz", formData, "YZfD8aXcQI9Qwai9L")
+    .then((result) => 
+    {
+      console.log(result.text)
+      toast.success("Message sent successfully!")
+      setFormData({ name: "", email: "", subject: "", message: "" })
+    }, 
+    (error) => 
+    {
+      console.log(error.text)
+      toast.error("Failed to send message. Please try again later.")
+    })
   }
 
   const handleChange = e => 
@@ -139,7 +154,10 @@ const Contact = () =>
                   <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all text-sm sm:text-base" placeholder="john@example.com" />
                 </div>
               </div>
-
+              <div>
+                <label htmlFor="subject" className="block text-gray-400 mb-2 text-sm sm:text-base">Subject</label>
+                <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all text-sm sm:text-base" placeholder="Subject" />
+              </div>
               <div>
                 <label htmlFor="message" className="block text-gray-400 mb-2 text-sm sm:text-base">Message</label>
                 <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows="4 sm:6" className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all resize-none text-sm sm:text-base" placeholder="Your message here..." />

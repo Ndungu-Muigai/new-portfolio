@@ -1,6 +1,8 @@
 import './App.css'
+import 'react-toastify/dist/ReactToastify.css'
 
 import ScrollToTop from "react-scroll-to-top"
+import { ToastContainer, Bounce } from 'react-toastify'
 
 import Hero from './Components/Hero'
 import About from './Components/About'
@@ -17,6 +19,7 @@ function App()
 
   return (
     <>
+    <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss={false} draggable pauseOnHover theme="colored" transition={Bounce}/>
       <Hero />
       <About />
       <Projects />
