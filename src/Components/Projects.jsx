@@ -5,7 +5,8 @@ import { useState } from "react"
 
 import projects from "../Data/Projects.json"
 
-const Projects = () => {
+const Projects = () => 
+{
   const [currentPage, setCurrentPage] = useState(1)
   const projectsPerPage = 6
   
