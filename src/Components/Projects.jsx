@@ -3,112 +3,15 @@ import { motion } from "motion/react"
 
 import { useState } from "react"
 
-const projects = [
-  {
-    title: "Cook Like Sushi",
-    description: "A dynamic web platform for a Nairobi-based food brand offering personalized meal plans, nutrition guidance, daily meal prep services, and in-home cooking experiences",
-    tags: ["React", "TailwindCSS", "Daisy UI", "Framer Motion"],
-    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&auto=format&fit=crop",
-    live: "https://cook-like-sushi.vercel.app/",
-    github: "https://github.com/Ndungu-Muigai/cook-like-sushi"
-  },
-  {
-    title: "Lizah Baby Shop",
-    description: "A fully functional e-commerce platform for selling baby products, featuring product browsing, cart management, and order processing.",
-    tags: ["Django", "TailwindCSS", "PostgreSQL"],
-    image: "https://media.istockphoto.com/id/2207271217/photo/optimization-of-procurement-or-purchasing-product-order-for-online-shopping-and-service.jpg?s=1024x1024&w=is&k=20&c=PYQL9vGi4asRT8h_tKZCgrD8NKQKOwL40DEKDP_1lsk=",
-    live: "https://www.lizahbabyshop.com/",
-    github: "https://github.com/Ndungu-Muigai/lizah-baby-shop"
-  },
-  {
-    title: "GetOut N Travel",
-    description: "A tours and travel platform that showcases upcoming trips with a clean, responsive interface for easy exploration.",
-    tags: ["React", "Tailwind", "Framer Motion"],
-    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=500&fit=crop",
-    live: "https://getoutntravel.vercel.app/",
-    github: "https://github.com/Ndungu-Muigai/getoutntravel"
-  },
-  {
-    title: "Event Management System",
-    description: "A full-stack platform for creating, managing, and attending events. Includes authentication, ticketing, event creation and role-based access.",
-    tags: ["NextJS", "Tailwind", "PostgreSQL",],
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=500&fit=crop",
-    live: "https://evnthub.vercel.app/",
-    github: "https://github.com/Ndungu-Muigai/event-management-system"
-  },
-  {
-    title: "Quizfusion Quiz App",
-    description: "An interactive quiz application that allows users to test their knowledge on various topics with instant feedback and dynamic scoring.",
-    tags: ["React", "Tailwind", "Daisy UI"],
-    image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=800&h=500&fit=crop",
-    live: "https://quizfusion.vercel.app/",
-    github: "https://github.com/Ndungu-Muigai/quiz-app.git"
-  },
-  {
-    title: "Rent Hive Rental Management",
-    description: "A comprehensive rental management system that simplifies property listings, tenant requests, and rent payments.",
-    tags: ["React", "Bootstrap", "Flask", "PostgreSQL", "AWS", "Redis"],
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop",
-    live: "https://rent-hive.vercel.app/",
-    github: "https://github.com/LourdesN/rent-hive"
-  },
-  {
-    title: "Leave Management System",
-    description: "A robust leave management system designed to streamline leave applications, approvals, and tracking for organizations.",
-    tags: ["React", "Bootstrap", "Flask", "PostgreSQL", "AWS", "Redis"],
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
-    live: "https://mobikey-lms.vercel.app/",
-    github: "https://github.com/Ndungu-Muigai/lms-frontend"
-  },
-  {
-    title: "Liteflux Enterprises",
-    description: "A fully functional e-commerce platform for selling electrical and solar products, featuring product browsing, cart management, and order processing.",
-    tags: ["React", "Bootstrap", "Flask", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
-    live: "https://liteflux-shop.vercel.app/",
-    github: "https://github.com/Ndungu-Muigai/liteflux-shop"
-  },
-  {
-    title: "Heads & Tails Game",
-    description: "An engaging heads or tails coin flip game with a clean UI and randomized outcomes.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1518644961665-ed172691aaa1?w=800&h=500&fit=crop",
-    live: "https://ndungu-muigai.github.io/Heads-Tails-Game/",
-    github: "https://github.com/ndungu-muigai/Heads-Tails-Game"
-  },
-  {
-    title: "Value Counter",
-    description: "A lightweight counter application that enables users to increment, decrement, and reset values dynamically.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
-    live: "https://ndungu-muigai.github.io/Counter-Using-HTML-CSS-JS/",
-    github: "https://github.com/ndungu-muigai/Counter-Using-HTML-CSS-JS"
-  },
-  {
-    title: "Dictionary Application",
-    description: "A dictionary app that allows users to search for word definitions, synonyms, and pronunciations using a public API.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=500&fit=crop",
-    live: "https://ndungu-muigai.github.io/dictionary-app-project/",
-    github: "https://github.com/ndungu-muigai/dictionary-app-project.git"
-  },
-  {
-    title: "Color Game",
-    description: "A fun and interactive color-matching game where players test their ability to identify colors within a given time.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=500&fit=crop",
-    live: "https://ndungu-muigai.github.io/Color-Game/",
-    github: "https://github.com/ndungu-muigai/Color-Game"
-  }
-]
+import projects from "../Data/Projects.json"
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const projectsPerPage = 6
-
+  
   const indexOfLastProject = currentPage * projectsPerPage
   const indexOfFirstProject = indexOfLastProject - projectsPerPage
-  const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject)
+  const currentProjects = [...projects].reverse().slice(indexOfFirstProject, indexOfLastProject)
 
   const totalPages = Math.ceil(projects.length / projectsPerPage)
 
