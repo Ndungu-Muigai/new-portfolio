@@ -15,7 +15,8 @@ const Projects = () => {
 
   const totalPages = Math.ceil(projects.length / projectsPerPage)
 
-  const paginate = (pageNumber) => {
+  const paginate = (pageNumber) => 
+  {
     setCurrentPage(pageNumber)
     document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })
   }
