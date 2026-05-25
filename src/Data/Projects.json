@@ -80,20 +80,20 @@
         "github": "https://github.com/Ndungu-Muigai/liteflux-shop"
     },
     {
-        "title": "Cook Like Sushi",
-        "description": "A dynamic web platform for a Nairobi-based food brand offering personalized meal plans, nutrition guidance, daily meal prep services, and in-home cooking experiences",
-        "tags": ["React", "TailwindCSS", "Daisy UI", "Framer Motion"],
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&auto=format&fit=crop",
-        "live": "https://cook-like-sushi.vercel.app/",
-        "github": "https://github.com/Ndungu-Muigai/cook-like-sushi"
-    },
-    {
         "title": "Lizah Baby Shop",
         "description": "A fully functional e-commerce platform for selling baby products, featuring product browsing, cart management, and order processing.",
         "tags": ["Django", "TailwindCSS", "PostgreSQL"],
         "image": "https://media.istockphoto.com/id/2207271217/photo/optimization-of-procurement-or-purchasing-product-order-for-online-shopping-and-service.jpg?s=1024x1024&w=is&k=20&c=PYQL9vGi4asRT8h_tKZCgrD8NKQKOwL40DEKDP_1lsk=",
         "live": "https://www.lizahbabyshop.com/",
         "github": "https://github.com/Ndungu-Muigai/lizah-baby-shop"
+    },
+    {
+        "title": "Cook Like Sushi",
+        "description": "A dynamic web platform for a Nairobi-based food brand offering personalized meal plans, nutrition guidance, daily meal prep services, and in-home cooking experiences",
+        "tags": ["React", "TailwindCSS", "Daisy UI", "Framer Motion"],
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&auto=format&fit=crop",
+        "live": "https://cook-like-sushi.vercel.app/",
+        "github": "https://github.com/Ndungu-Muigai/cook-like-sushi"
     },
     {
         "title": "MatchPoint Dating app",
